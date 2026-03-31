@@ -6,8 +6,9 @@ cd data
 
 # trying to get all of the zip files from nasa data website (html parsing)
 #for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do wget -P raw/ $line;>
-for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do echo $line;done
+#for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do echo $line;done
 
+grep -Po 'https://[^" >]+\.zip' "$WEBSITE_LOC" | wget -c --show-progress -P raw/ -i -
 
 
 cd raw/ 
