@@ -4,11 +4,16 @@ WEBSITE_LOC="data-site.htm"
 
 cd data
 
-for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do wget -P raw/ $line; done
+# trying to get all of the zip files from nasa data website (html parsing)
+#for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do wget -P raw/ $line;>
+for line in $(grep -Po 'https://[^" >]+\.zip' $WEBSITE_LOC); do echo $line;done
+
+
 
 cd raw/ 
 
-for file in *.zip; unzip $file; done
+# unzipping all of those files
+for file in *.zip; do unzip $file; done
 
 rm *.zip
 
