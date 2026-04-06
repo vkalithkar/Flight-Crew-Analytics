@@ -208,3 +208,4 @@ __marimo__/
 
 data/raw/**/*.csv
 data/raw/**/*.zip
+data/clean/
