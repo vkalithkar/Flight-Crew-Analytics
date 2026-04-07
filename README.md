@@ -1,7 +1,7 @@
 # Flight-Crew-Analytics
 
 Names:
-	Katy L.
+	Katy L
 	Sierra L.
 	Sheoli L.
 	Vandana K.

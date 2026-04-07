@@ -1,0 +1,64 @@
+Included is real physiological data from eighteen pilots who were subjected to various events.  
+This data was used in a Kaggle competition and the training set was comprised of the benchmark 
+data for the subjects and the models wwere evaluated with the Line Oriented Flight Training (LOFT) data.  
+
+The benchmark data (files ending in “_CA”, “_DA”, and “_SS”) were collected in a non-flight 
+environment outside of a flight simulator. The LOFT simulation consists of a full flight 
+(take off, flight and landing) in a flight simulator.  
+
+The events which the subjects experienced were each intended to induce one of the following three 
+cognitive states: Channelized Attention (CA); Diverted Attention (DA); and Startle/Surprise (SS).  
+•	Channelized Attention is, roughly speaking, the state of being focused on one task to the 
+exclusion of all others.  This is induced in benchmarking by having the subjects play an engaging 
+puzzle-based video game.
+•	Diverted Attention is the state of having one’s attention diverted by actions or thought 
+processes associated with a decision.  This is induced by having the subjects perform a display 
+monitoring task.  Periodically a math problem showed up which had to be solved before returning to 
+the monitoring task.
+•	Startle/Surprise is induced by having the subjects watch movie clips with jump scares.
+ 
+During the LOFT simulation, certain events took place designed to induce cognitive states.  There were 
+two separate events designed to induce SS, two to induce CA, and at least two to induce DA.
+
+Benchmarks were collected in the morning and LOFTs were in the afternoon.  Each experiment is saved in 
+its own .csv file where a column is a specific measurement, time, or event marker and a row is a full 
+sample with measurements from each sensor associated with a timestamp.
+
+Crews are pairs of subjects, so the i-th crew consists of subject 2i-1 and subject 2i.  The odd numbered 
+subjects were in the left seat and the evens in the right.  For example, the 7th crew consists of subjects 
+13 and 14.
+
+The benchmark files are named by subject number and one of CA, DA, or SS.  The LOFT files are named by 
+subject number and LOFT.  For example, subject 5’s DA benchmark file is 5_DA.csv and their LOFT data file 
+is 5_Loft.csv.
+
+Each sensor operated at a sample rate of 256 Hz.  
+
+Please note that since this is physiological data from real people, there will be noise and artifacts in the data.
+
+Data Fields:
+------------
+TimeSecs – Time from the start of the readings in seconds.
+
+EEG_FP1, EEG_F7, EEG_F8, EEG_T4, EEG_T6, EEG_T5, EEG_T3, EEG_FP2, EEG_O1, EEG_P3, EEG_Pz, EEG_F3, EEG_Fz, 
+EEG_F4, EEG_C4, EEG_P4, EEG_POz, EEG_C3, EEG_Cz, EEG_O2 – Various electro-encephalogram (EEG) sensor readings.  
+The alphanumeric codes after the underscore represent positions on the subject’s head per sensor design.  
+Data were collected with the B-Alert X24 EEG system.
+
+ECG – 3-point Electrocardiogram signal.  The sensor had a resolution/bit of .012215 µV and a range of 
+-100mV to +100mV.
+
+R – Respiration, a measure of the rise and fall of the chest. The sensor had a resolution/bit of 
+.2384186 µV and a range of -2.0V to +2.0V.
+
+GSR – Galvanic Skin Response, a measure of electrodermal activity.  The sensor had a resolution/bit of 
+.2384186 µV and a range of -2.0V to +2.0V.
+
+Data for ECG, R, and GSR was collected with the NeXus-10 system.
+
+Event – 0: No event
+1: Subject is in the SS state
+2: Subject is in the CA state
+3: There should be no 3s.  If there are, treat them as 0s.
+4: There should be no 4s.  If there are, treat them as 0s.
+5: Subject is in the DA state
