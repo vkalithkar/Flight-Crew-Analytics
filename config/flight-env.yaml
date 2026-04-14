@@ -92,6 +92,7 @@ dependencies:
   - libwebp-base=1.6.0
   - libxcb=1.17.0
   - libxcrypt=4.4.36
+  - libxgboost=3.2.0
   - libxkbcommon=1.13.1
   - libxml2=2.15.2
   - libxml2-16=2.15.2
@@ -106,7 +107,7 @@ dependencies:
   - numpy=2.4.3
   - openjpeg=2.5.4
   - openldap=2.6.10
-  - openssl=3.6.1
+  - openssl=3.6.2
   - packaging=26.0
   - pandas=3.0.2
   - pcre2=10.47
@@ -115,8 +116,11 @@ dependencies:
   - pixman=0.46.4
   - platformdirs=4.9.6
   - pooch=1.9.0
+  - psutil=7.2.2
   - pthread-stubs=0.4
+  - py-xgboost=3.2.0
   - pyparsing=3.3.2
+  - pyprep=0.6.0
   - pyside6=6.11.0
   - pysocks=1.7.1
   - python=3.14.3
@@ -144,6 +148,7 @@ dependencies:
   - xcb-util-keysyms=0.4.1
   - xcb-util-renderutil=0.3.10
   - xcb-util-wm=0.4.2
+  - xgboost=3.2.0
   - xkeyboard-config=2.47
   - xorg-libice=1.1.2
   - xorg-libsm=1.2.6
