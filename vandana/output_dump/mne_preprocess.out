@@ -1,0 +1,1363 @@
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot5 and runCA!
+Completed 5_CA. Bads found: ['T5', 'O2', 'Cz', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot5 and runDA!
+Completed 5_DA. Bads found: ['Cz', 'T5', 'Fp1', 'F8', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot5 and runSS!
+Completed 5_SS. Bads found: ['Cz', 'T4', 'T5', 'Fp1', 'F8', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot5 and runLOFT!
+Completed 5_LOFT. Bads found: ['T4', 'T5', 'Fp1', 'P3', 'O2', 'T6', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot6 and runCA!
+Completed 6_CA. Bads found: ['C3', 'P3', 'T3', 'O2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot6 and runDA!
+Completed 6_DA. Bads found: ['Cz', 'Fp1', 'C3', 'P3', 'T3', 'O2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot6 and runSS!
+Completed 6_SS. Bads found: ['Cz', 'Fp1', 'C3', 'F8', 'P3', 'O2', 'Fp2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot6 and runLOFT!
+Completed 6_LOFT. Bads found: ['Cz', 'C3', 'P3', 'O2', 'Fp2', 'F4', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot9 and runCA!
+Completed 9_CA. Bads found: ['Cz', 'F7', 'Fp1', 'F8', 'T3', 'O2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot9 and runDA!
+Completed 9_DA. Bads found: ['O2', 'F8', 'T4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot9 and runSS!
+Completed 9_SS. Bads found: ['Cz', 'T4', 'Fp1', 'T3', 'O2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot9 and runLOFT!
+Completed 9_LOFT. Bads found: ['Cz', 'C4', 'Fp1', 'P3', 'O2', 'T6', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot10 and runCA!
+Completed 10_CA. Bads found: ['T5', 'O2', 'P4', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot10 and runDA!
+Completed 10_DA. Bads found: ['T5', 'Fp1', 'Fp2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot10 and runSS!
+Completed 10_SS. Bads found: ['T5', 'Fp1', 'O2', 'Fp2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot10 and runLOFT!
+Completed 10_LOFT. Bads found: ['T5', 'Fp1', 'O2', 'Fp2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot11 and runCA!
+Completed 11_CA. Bads found: ['T4', 'T5', 'T3', 'O2', 'O1', 'F4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot11 and runDA!
+Completed 11_DA. Bads found: ['T4', 'F7', 'F8', 'T3', 'F4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot11 and runSS!
+Completed 11_SS. Bads found: ['C4', 'T5', 'Fp1', 'T3', 'T6', 'Fp2', 'F4', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot11 and runLOFT!
+Completed 11_LOFT. Bads found: ['F4', 'T5', 'Fz', 'Pz', 'T3', 'T6', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot12 and runCA!
+Completed 12_CA. Bads found: ['T5']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot12 and runDA!
+Completed 12_DA. Bads found: ['T5', 'T6', 'C4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot12 and runSS!
+Completed 12_SS. Bads found: ['Cz', 'C4', 'T4', 'F7', 'Fp1', 'F8', 'O2', 'F4', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot12 and runLOFT!
+Completed 12_LOFT. Bads found: ['Fp1', 'P3', 'O2', 'T6', 'F4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot13 and runCA!
+Completed 13_CA. Bads found: ['Fp2', 'O2', 'F8', 'Cz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot13 and runDA!
+Completed 13_DA. Bads found: ['Cz', 'T5', 'Fp1', 'POz', 'O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot13 and runSS!
+Completed 13_SS. Bads found: ['T5', 'Fp1', 'F8', 'O2', 'Fp2', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot13 and runLOFT!
+Completed 13_LOFT. Bads found: ['O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot14 and runCA!
+Completed 14_CA. Bads found: ['Cz', 'T4', 'Fp1', 'F8', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot14 and runDA!
+Completed 14_DA. Bads found: ['Fp2', 'O2', 'Fp1', 'Cz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot14 and runSS!
+Completed 14_SS. Bads found: ['Cz', 'T4', 'T5', 'Fp1', 'F8', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot14 and runLOFT!
+Completed 14_LOFT. Bads found: ['Cz', 'T4', 'Fp1', 'F8', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot17 and runCA!
+Completed 17_CA. Bads found: ['Cz', 'T4', 'F8', 'P3', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot17 and runDA!
+Completed 17_DA. Bads found: ['O2', 'T6', 'F8', 'T4']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot17 and runSS!
+Completed 17_SS. Bads found: ['Cz', 'T4', 'F8', 'P3', 'Pz', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot17 and runLOFT!
+Completed 17_LOFT. Bads found: ['Cz', 'T4', 'F8', 'Pz', 'T3', 'O2', 'T6', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot18 and runCA!
+Completed 18_CA. Bads found: ['Fp2', 'O2', 'Fp1', 'T3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot18 and runDA!
+Completed 18_DA. Bads found: ['Cz', 'F7', 'T3', 'O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot18 and runSS!
+Completed 18_SS. Bads found: ['O2', 'Fp2', 'Cz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot18 and runLOFT!
+Completed 18_LOFT. Bads found: ['POz', 'P3', 'Pz', 'O2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot19 and runCA!
+Completed 19_CA. Bads found: ['Cz', 'T3', 'O2', 'Fp2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot19 and runDA!
+Completed 19_DA. Bads found: ['O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot19 and runSS!
+Completed 19_SS. Bads found: ['O2', 'Fp1', 'T3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot19 and runLOFT!
+Completed 19_LOFT. Bads found: ['Cz', 'Fp1', 'Pz', 'T3', 'O2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot21 and runCA!
+Completed 21_CA. Bads found: ['Cz', 'T5', 'Pz', 'O2', 'Fp2', 'T6', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot21 and runDA!
+Completed 21_DA. Bads found: ['Cz', 'Pz', 'O2', 'Fp2', 'T6', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot21 and runSS!
+Completed 21_SS. Bads found: ['Cz', 'T5', 'O2', 'Fp2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot21 and runLOFT!
+Completed 21_LOFT. Bads found: ['Cz', 'T5', 'Fp1', 'Pz', 'O2', 'Fp2', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot22 and runCA!
+Completed 22_CA. Bads found: ['Cz', 'Fp1', 'Pz', 'P3', 'O2', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot22 and runDA!
+Completed 22_DA. Bads found: ['Cz', 'Fp1', 'Pz', 'P3', 'O2', 'Fp2', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot22 and runSS!
+Completed 22_SS. Bads found: ['Cz', 'Fz', 'C3', 'Fp1', 'Pz', 'P3', 'O2', 'Fp2', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot22 and runLOFT!
+Completed 22_LOFT. Bads found: ['Cz', 'P4', 'Fp1', 'C3', 'Pz', 'P3', 'O2', 'Fp2', 'F3', 'Fz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot23 and runCA!
+Completed 23_CA. Bads found: ['Cz', 'T5', 'T3', 'O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot23 and runDA!
+Completed 23_DA. Bads found: ['Fp2', 'O2', 'Fp1', 'Cz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot23 and runSS!
+Completed 23_SS. Bads found: ['Cz', 'T5', 'Fp1', 'O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot23 and runLOFT!
+Completed 23_LOFT. Bads found: ['Cz', 'P4', 'T5', 'Fp1', 'P3', 'O2', 'Fp2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot24 and runCA!
+Completed 24_CA. Bads found: ['O2', 'Fp2', 'Pz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot24 and runDA!
+Completed 24_DA. Bads found: ['T5', 'O2', 'Fp1', 'Pz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot24 and runSS!
+Completed 24_SS. Bads found: ['Cz', 'T5', 'F8', 'Pz', 'T3', 'O2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot24 and runLOFT!
+Completed 24_LOFT. Bads found: ['T4', 'T5', 'Fp1', 'F8', 'T3', 'O2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot25 and runCA!
+Completed 25_CA. Bads found: ['F7', 'O2', 'Pz', 'T3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot25 and runDA!
+Completed 25_DA. Bads found: ['O2', 'F4', 'POz', 'Pz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot25 and runSS!
+Completed 25_SS. Bads found: ['O2', 'Pz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot25 and runLOFT!
+Completed 25_LOFT. Bads found: ['O2', 'Fp2', 'T4', 'Pz']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot26 and runCA!
+Completed 26_CA. Bads found: ['Cz', 'T4', 'F8', 'POz', 'T3', 'O2']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot26 and runDA!
+Completed 26_DA. Bads found: ['F8', 'POz', 'T3', 'O2', 'T6']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot26 and runSS!
+Completed 26_SS. Bads found: ['O2', 'Fp1', 'T6', 'F3']
+data read
+data loaded
+frequency filtered
+Setting up high-pass filter at 1 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal highpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Executing RANSAC
+This may take a while, so be patient...
+
+RANSAC done!
+nd ran! Bads found! Pilot26 and runLOFT!
+Completed 26_LOFT. Bads found: ['O2', 'Fp2', 'T4', 'Fz']
+autobad dict
+{'5_CA': ['T5', 'O2', 'Cz', 'T6'], '5_DA': ['Cz', 'T5', 'Fp1', 'F8', 'O2', 'T6'], '5_SS': ['Cz', 'T4', 'T5', 'Fp1', 'F8', 'O2', 'T6'], '5_LOFT': ['T4', 'T5', 'Fp1', 'P3', 'O2', 'T6', 'F3'], '6_CA': ['C3', 'P3', 'T3', 'O2', 'F3'], '6_DA': ['Cz', 'Fp1', 'C3', 'P3', 'T3', 'O2', 'F3'], '6_SS': ['Cz', 'Fp1', 'C3', 'F8', 'P3', 'O2', 'Fp2', 'F3'], '6_LOFT': ['Cz', 'C3', 'P3', 'O2', 'Fp2', 'F4', 'F3'], '9_CA': ['Cz', 'F7', 'Fp1', 'F8', 'T3', 'O2'], '9_DA': ['O2', 'F8', 'T4'], '9_SS': ['Cz', 'T4', 'Fp1', 'T3', 'O2'], '9_LOFT': ['Cz', 'C4', 'Fp1', 'P3', 'O2', 'T6', 'F3'], '10_CA': ['T5', 'O2', 'P4', 'T6'], '10_DA': ['T5', 'Fp1', 'Fp2', 'T6'], '10_SS': ['T5', 'Fp1', 'O2', 'Fp2', 'T6'], '10_LOFT': ['T5', 'Fp1', 'O2', 'Fp2', 'T6'], '11_CA': ['T4', 'T5', 'T3', 'O2', 'O1', 'F4'], '11_DA': ['T4', 'F7', 'F8', 'T3', 'F4'], '11_SS': ['C4', 'T5', 'Fp1', 'T3', 'T6', 'Fp2', 'F4', 'F3'], '11_LOFT': ['F4', 'T5', 'Fz', 'Pz', 'T3', 'T6', 'F3'], '12_CA': ['T5'], '12_DA': ['T5', 'T6', 'C4'], '12_SS': ['Cz', 'C4', 'T4', 'F7', 'Fp1', 'F8', 'O2', 'F4', 'Fz'], '12_LOFT': ['Fp1', 'P3', 'O2', 'T6', 'F4'], '13_CA': ['Fp2', 'O2', 'F8', 'Cz'], '13_DA': ['Cz', 'T5', 'Fp1', 'POz', 'O2', 'Fp2'], '13_SS': ['T5', 'Fp1', 'F8', 'O2', 'Fp2', 'Fz'], '13_LOFT': ['O2', 'Fp2'], '14_CA': ['Cz', 'T4', 'Fp1', 'F8', 'O2', 'T6'], '14_DA': ['Fp2', 'O2', 'Fp1', 'Cz'], '14_SS': ['Cz', 'T4', 'T5', 'Fp1', 'F8', 'O2', 'T6'], '14_LOFT': ['Cz', 'T4', 'Fp1', 'F8', 'O2', 'T6'], '17_CA': ['Cz', 'T4', 'F8', 'P3', 'O2', 'T6'], '17_DA': ['O2', 'T6', 'F8', 'T4'], '17_SS': ['Cz', 'T4', 'F8', 'P3', 'Pz', 'O2', 'T6'], '17_LOFT': ['Cz', 'T4', 'F8', 'Pz', 'T3', 'O2', 'T6', 'Fz'], '18_CA': ['Fp2', 'O2', 'Fp1', 'T3'], '18_DA': ['Cz', 'F7', 'T3', 'O2', 'Fp2'], '18_SS': ['O2', 'Fp2', 'Cz'], '18_LOFT': ['POz', 'P3', 'Pz', 'O2', 'F3'], '19_CA': ['Cz', 'T3', 'O2', 'Fp2', 'T6'], '19_DA': ['O2', 'Fp2'], '19_SS': ['O2', 'Fp1', 'T3'], '19_LOFT': ['Cz', 'Fp1', 'Pz', 'T3', 'O2', 'F3'], '21_CA': ['Cz', 'T5', 'Pz', 'O2', 'Fp2', 'T6', 'Fz'], '21_DA': ['Cz', 'Pz', 'O2', 'Fp2', 'T6', 'Fz'], '21_SS': ['Cz', 'T5', 'O2', 'Fp2', 'T6'], '21_LOFT': ['Cz', 'T5', 'Fp1', 'Pz', 'O2', 'Fp2', 'Fz'], '22_CA': ['Cz', 'Fp1', 'Pz', 'P3', 'O2', 'Fz'], '22_DA': ['Cz', 'Fp1', 'Pz', 'P3', 'O2', 'Fp2', 'Fz'], '22_SS': ['Cz', 'Fz', 'C3', 'Fp1', 'Pz', 'P3', 'O2', 'Fp2', 'F3'], '22_LOFT': ['Cz', 'P4', 'Fp1', 'C3', 'Pz', 'P3', 'O2', 'Fp2', 'F3', 'Fz'], '23_CA': ['Cz', 'T5', 'T3', 'O2', 'Fp2'], '23_DA': ['Fp2', 'O2', 'Fp1', 'Cz'], '23_SS': ['Cz', 'T5', 'Fp1', 'O2', 'Fp2'], '23_LOFT': ['Cz', 'P4', 'T5', 'Fp1', 'P3', 'O2', 'Fp2'], '24_CA': ['O2', 'Fp2', 'Pz'], '24_DA': ['T5', 'O2', 'Fp1', 'Pz'], '24_SS': ['Cz', 'T5', 'F8', 'Pz', 'T3', 'O2'], '24_LOFT': ['T4', 'T5', 'Fp1', 'F8', 'T3', 'O2'], '25_CA': ['F7', 'O2', 'Pz', 'T3'], '25_DA': ['O2', 'F4', 'POz', 'Pz'], '25_SS': ['O2', 'Pz'], '25_LOFT': ['O2', 'Fp2', 'T4', 'Pz'], '26_CA': ['Cz', 'T4', 'F8', 'POz', 'T3', 'O2'], '26_DA': ['F8', 'POz', 'T3', 'O2', 'T6'], '26_SS': ['O2', 'Fp1', 'T6', 'F3'], '26_LOFT': ['O2', 'Fp2', 'T4', 'Fz']}
+Final results saved to vandana/pyprep_results.json

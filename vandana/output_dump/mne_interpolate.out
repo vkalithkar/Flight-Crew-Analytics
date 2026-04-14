@@ -1,0 +1,682 @@
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 5_CA
+frequency filtered
+Finished processing 5_CA. Saved to vandana/cleaned_data/5/5_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 5_DA
+frequency filtered
+Finished processing 5_DA. Saved to vandana/cleaned_data/5/5_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 5_SS
+frequency filtered
+Finished processing 5_SS. Saved to vandana/cleaned_data/5/5_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 5_LOFT
+frequency filtered
+Finished processing 5_LOFT. Saved to vandana/cleaned_data/5/5_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 6_CA
+frequency filtered
+Finished processing 6_CA. Saved to vandana/cleaned_data/6/6_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 6_DA
+frequency filtered
+Finished processing 6_DA. Saved to vandana/cleaned_data/6/6_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 12 sensor positions
+Interpolating 8 sensors
+Interpolated bads for 6_SS
+frequency filtered
+Finished processing 6_SS. Saved to vandana/cleaned_data/6/6_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 6_LOFT
+frequency filtered
+Finished processing 6_LOFT. Saved to vandana/cleaned_data/6/6_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 9_CA
+frequency filtered
+Finished processing 9_CA. Saved to vandana/cleaned_data/9/9_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 17 sensor positions
+Interpolating 3 sensors
+Interpolated bads for 9_DA
+frequency filtered
+Finished processing 9_DA. Saved to vandana/cleaned_data/9/9_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 9_SS
+frequency filtered
+Finished processing 9_SS. Saved to vandana/cleaned_data/9/9_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 9_LOFT
+frequency filtered
+Finished processing 9_LOFT. Saved to vandana/cleaned_data/9/9_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 10_CA
+frequency filtered
+Finished processing 10_CA. Saved to vandana/cleaned_data/10/10_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 10_DA
+frequency filtered
+Finished processing 10_DA. Saved to vandana/cleaned_data/10/10_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 10_SS
+frequency filtered
+Finished processing 10_SS. Saved to vandana/cleaned_data/10/10_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 10_LOFT
+frequency filtered
+Finished processing 10_LOFT. Saved to vandana/cleaned_data/10/10_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 11_CA
+frequency filtered
+Finished processing 11_CA. Saved to vandana/cleaned_data/11/11_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 11_DA
+frequency filtered
+Finished processing 11_DA. Saved to vandana/cleaned_data/11/11_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 12 sensor positions
+Interpolating 8 sensors
+Interpolated bads for 11_SS
+frequency filtered
+Finished processing 11_SS. Saved to vandana/cleaned_data/11/11_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 11_LOFT
+frequency filtered
+Finished processing 11_LOFT. Saved to vandana/cleaned_data/11/11_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 19 sensor positions
+Interpolating 1 sensors
+Interpolated bads for 12_CA
+frequency filtered
+Finished processing 12_CA. Saved to vandana/cleaned_data/12/12_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 17 sensor positions
+Interpolating 3 sensors
+Interpolated bads for 12_DA
+frequency filtered
+Finished processing 12_DA. Saved to vandana/cleaned_data/12/12_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 11 sensor positions
+Interpolating 9 sensors
+Interpolated bads for 12_SS
+frequency filtered
+Finished processing 12_SS. Saved to vandana/cleaned_data/12/12_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 12_LOFT
+frequency filtered
+Finished processing 12_LOFT. Saved to vandana/cleaned_data/12/12_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 13_CA
+frequency filtered
+Finished processing 13_CA. Saved to vandana/cleaned_data/13/13_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 13_DA
+frequency filtered
+Finished processing 13_DA. Saved to vandana/cleaned_data/13/13_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 13_SS
+frequency filtered
+Finished processing 13_SS. Saved to vandana/cleaned_data/13/13_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 18 sensor positions
+Interpolating 2 sensors
+Interpolated bads for 13_LOFT
+frequency filtered
+Finished processing 13_LOFT. Saved to vandana/cleaned_data/13/13_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 14_CA
+frequency filtered
+Finished processing 14_CA. Saved to vandana/cleaned_data/14/14_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 14_DA
+frequency filtered
+Finished processing 14_DA. Saved to vandana/cleaned_data/14/14_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 14_SS
+frequency filtered
+Finished processing 14_SS. Saved to vandana/cleaned_data/14/14_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 14_LOFT
+frequency filtered
+Finished processing 14_LOFT. Saved to vandana/cleaned_data/14/14_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 17_CA
+frequency filtered
+Finished processing 17_CA. Saved to vandana/cleaned_data/17/17_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 17_DA
+frequency filtered
+Finished processing 17_DA. Saved to vandana/cleaned_data/17/17_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 17_SS
+frequency filtered
+Finished processing 17_SS. Saved to vandana/cleaned_data/17/17_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 12 sensor positions
+Interpolating 8 sensors
+Interpolated bads for 17_LOFT
+frequency filtered
+Finished processing 17_LOFT. Saved to vandana/cleaned_data/17/17_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 18_CA
+frequency filtered
+Finished processing 18_CA. Saved to vandana/cleaned_data/18/18_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 18_DA
+frequency filtered
+Finished processing 18_DA. Saved to vandana/cleaned_data/18/18_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 17 sensor positions
+Interpolating 3 sensors
+Interpolated bads for 18_SS
+frequency filtered
+Finished processing 18_SS. Saved to vandana/cleaned_data/18/18_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 18_LOFT
+frequency filtered
+Finished processing 18_LOFT. Saved to vandana/cleaned_data/18/18_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 19_CA
+frequency filtered
+Finished processing 19_CA. Saved to vandana/cleaned_data/19/19_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 18 sensor positions
+Interpolating 2 sensors
+Interpolated bads for 19_DA
+frequency filtered
+Finished processing 19_DA. Saved to vandana/cleaned_data/19/19_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 17 sensor positions
+Interpolating 3 sensors
+Interpolated bads for 19_SS
+frequency filtered
+Finished processing 19_SS. Saved to vandana/cleaned_data/19/19_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 19_LOFT
+frequency filtered
+Finished processing 19_LOFT. Saved to vandana/cleaned_data/19/19_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 21_CA
+frequency filtered
+Finished processing 21_CA. Saved to vandana/cleaned_data/21/21_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 21_DA
+frequency filtered
+Finished processing 21_DA. Saved to vandana/cleaned_data/21/21_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 21_SS
+frequency filtered
+Finished processing 21_SS. Saved to vandana/cleaned_data/21/21_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 21_LOFT
+frequency filtered
+Finished processing 21_LOFT. Saved to vandana/cleaned_data/21/21_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 22_CA
+frequency filtered
+Finished processing 22_CA. Saved to vandana/cleaned_data/22/22_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 22_DA
+frequency filtered
+Finished processing 22_DA. Saved to vandana/cleaned_data/22/22_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 11 sensor positions
+Interpolating 9 sensors
+Interpolated bads for 22_SS
+frequency filtered
+Finished processing 22_SS. Saved to vandana/cleaned_data/22/22_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 10 sensor positions
+Interpolating 10 sensors
+Interpolated bads for 22_LOFT
+frequency filtered
+Finished processing 22_LOFT. Saved to vandana/cleaned_data/22/22_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 23_CA
+frequency filtered
+Finished processing 23_CA. Saved to vandana/cleaned_data/23/23_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 23_DA
+frequency filtered
+Finished processing 23_DA. Saved to vandana/cleaned_data/23/23_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 23_SS
+frequency filtered
+Finished processing 23_SS. Saved to vandana/cleaned_data/23/23_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 13 sensor positions
+Interpolating 7 sensors
+Interpolated bads for 23_LOFT
+frequency filtered
+Finished processing 23_LOFT. Saved to vandana/cleaned_data/23/23_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 17 sensor positions
+Interpolating 3 sensors
+Interpolated bads for 24_CA
+frequency filtered
+Finished processing 24_CA. Saved to vandana/cleaned_data/24/24_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 24_DA
+frequency filtered
+Finished processing 24_DA. Saved to vandana/cleaned_data/24/24_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 24_SS
+frequency filtered
+Finished processing 24_SS. Saved to vandana/cleaned_data/24/24_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 24_LOFT
+frequency filtered
+Finished processing 24_LOFT. Saved to vandana/cleaned_data/24/24_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 25_CA
+frequency filtered
+Finished processing 25_CA. Saved to vandana/cleaned_data/25/25_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 25_DA
+frequency filtered
+Finished processing 25_DA. Saved to vandana/cleaned_data/25/25_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 18 sensor positions
+Interpolating 2 sensors
+Interpolated bads for 25_SS
+frequency filtered
+Finished processing 25_SS. Saved to vandana/cleaned_data/25/25_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 25_LOFT
+frequency filtered
+Finished processing 25_LOFT. Saved to vandana/cleaned_data/25/25_LOFT_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 14 sensor positions
+Interpolating 6 sensors
+Interpolated bads for 26_CA
+frequency filtered
+Finished processing 26_CA. Saved to vandana/cleaned_data/26/26_CA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 15 sensor positions
+Interpolating 5 sensors
+Interpolated bads for 26_DA
+frequency filtered
+Finished processing 26_DA. Saved to vandana/cleaned_data/26/26_DA_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 26_SS
+frequency filtered
+Finished processing 26_SS. Saved to vandana/cleaned_data/26/26_SS_cleaned_raw.fif
+data read
+data loaded
+Setting channel interpolation method to {'eeg': 'spline'}.
+Interpolating bad channels.
+    Automatic origin fit: head of radius 95.7 mm
+Computing interpolation matrix from 16 sensor positions
+Interpolating 4 sensors
+Interpolated bads for 26_LOFT
+frequency filtered
+Finished processing 26_LOFT. Saved to vandana/cleaned_data/26/26_LOFT_cleaned_raw.fif
+
+All files have been cleaned and saved as .fif files.
