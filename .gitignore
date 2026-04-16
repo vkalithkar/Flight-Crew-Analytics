@@ -213,3 +213,5 @@ data/clean/
 vandana/raw_filtered_eeg_plots
 vandana/cleaned_data
 vandana/ica_data
+
+katy/clean/
