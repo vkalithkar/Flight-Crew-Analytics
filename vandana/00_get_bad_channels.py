@@ -4,6 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 import os
 from pyprep.find_noisy_channels import NoisyChannels
+import json
 
 # Channels used
 ch_names = ['EEG_FP1', 'EEG_F7', 'EEG_F8', 'EEG_T4', 'EEG_T6', 'EEG_T5', 'EEG_T3',
@@ -30,6 +31,7 @@ for pilot in pilots:
         # Data read
         data_path = f"data/raw/{pilot}/{pilot}_{run}.csv"
         data = pd.read_csv(data_path, skiprows=0, usecols=[*range(3, 23)]) 
+        print("data read")
 
         # Load raw EEG data onto MNE
         raw = mne.io.RawArray(data.transpose().values.copy()/ 1e6, info, verbose=False)
@@ -39,10 +41,12 @@ for pilot in pilots:
 
         montage = mne.channels.make_standard_montage('standard_1020')
         raw.set_montage(montage)
+        print("data loaded")
 
         # Filtering
         raw.notch_filter(60, verbose=False)
         raw.filter(l_freq=1.0, h_freq=50.0, verbose=False)
+        print("frequency filtered")
 
         # # Generate raw squiggle plot and save
         # fig = raw.plot(duration=10, scalings='auto', show=False)
@@ -58,19 +62,24 @@ for pilot in pilots:
         nd = NoisyChannels(raw)
         # Run all detection methods
         nd.find_all_bads() 
+        print(f"nd ran! Bads found! Pilot{pilot} and run{run}!")
 
         # Get the suggested bad channels and add it to bad channel dict
         current_key = f"{pilot}_{run}"
-        auto_bad_dict[current_key] = nd.get_bads()
 
-        print(f"Completed {current_key}. Bads found: {nd.get_bads()}")
+        # Convert NumPy strings to standard Python strings
+        suggestions = [str(ch) for ch in nd.get_bads()]
+        auto_bad_dict[current_key] = suggestions
 
+        print(f"Completed {current_key}. Bads found: {suggestions}")
+
+print("autobad dict")
 print(auto_bad_dict)
 
-# Json save the auto_bad_dict
+# Json save the auto_bad_dict 
 output_path = 'vandana/pyprep_results.json'
-
-os.makedirs('vandana', exist_ok=True)
 
 with open(output_path, 'w') as f:
     json.dump(auto_bad_dict, f, indent=4)
+
+print(f"Final results saved to {output_path}")
