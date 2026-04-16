@@ -129,6 +129,7 @@ dependencies:
   - munkres=1.1.4
   - ncurses=6.5
   - networkx=3.6.1
+  - neurokit2=0.2.13
   - numexpr=2.14.1
   - numpy=2.4.3
   - openjpeg=2.5.4
@@ -160,6 +161,7 @@ dependencies:
   - python-picard=0.8.1
   - python_abi=3.14
   - pytorch=2.10.0
+  - pywavelets=1.9.0
   - qdarkstyle=3.2.3
   - qhull=2020.2
   - qt6-main=6.11.0
@@ -210,4 +212,4 @@ dependencies:
   - zipp=3.23.1
   - zlib-ng=2.3.3
   - zstd=1.5.7
-prefix: /sciclone/home/vkalithkar/.conda/envs/flight-env
+prefix: /sciclone/home/kdlenshin/.conda/envs/flight-env
