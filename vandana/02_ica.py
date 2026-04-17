@@ -29,22 +29,37 @@ for pilot in pilots:
         input_path = os.path.join(input_dir, file_name)
 
         # Load pre-cleaned filtered EEG data onto MNE
-        raw = mne.io.read_raw_fif(input_path, preload=True, verbose=False)        
+        raw = mne.io.read_raw_fif(input_path, preload=True, verbose=False)  
+        mapping = {name: name.replace('EEG_', '').replace('FP', 'Fp') for name in raw.ch_names}
+        raw.rename_channels(mapping)
+
+        montage = mne.channels.make_standard_montage('standard_1020')
+        raw.set_montage(montage)
+      
         print("data loaded")
 
+        # Reassert this
+        raw.filter(l_freq=1.0, h_freq=None, verbose=False)
+
         # Initialize and run ICA
-        ica = ICA(n_components=15, random_state=42, method='fastica')
+        ica = ICA(n_components=0.99, random_state=42, method='picard', fit_params=dict(ortho=False, extended=True))
         ica.fit(raw, verbose=False)
 
         # Automated labeling with a pre-trained EEG ML model 
         ic_labels = label_components(raw, ica, method='iclabel')
         labels = ic_labels["labels"]
+        probs = ic_labels["y_pred_proba"] # This is the secret sauce
 
-        # Which components to remove
-        exclude_idx = [
-            idx for idx, label in enumerate(labels) 
-            if label in ["eye", "muscle", "heart", "line_noise"]
-        ]
+        artifact_categories = ["eye", "muscle", "heart"]
+        exclude_idx = []
+        for i in range(len(labels)):
+            # Force the brain_prob extraction based on actual array shape
+            # If 2D: [component_index, brain_column]
+            # If 1D: we need to investigate why, but usually it's [brain_column]
+            current_brain_prob = probs[i][0] if isinstance(probs[i], (np.ndarray, list)) else probs[0]
+            
+            if labels[i] in ["eye", "muscle", "heart"] or current_brain_prob < 0.30:
+                exclude_idx.append(i)  
 
         # Apply and save
         ica.exclude = exclude_idx
