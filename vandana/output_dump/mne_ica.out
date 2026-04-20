@@ -1,137 +1,209 @@
 data loaded
-Processed 5_CA: Excluded 0 artifact components. Saved to vandana/ica_data/5/5_CA_ica_raw.fif
+[5_CA] Created 358 labeled epochs.
 data loaded
-Processed 5_DA: Excluded 0 artifact components. Saved to vandana/ica_data/5/5_DA_ica_raw.fif
+[5_DA] Created 358 labeled epochs.
 data loaded
-Processed 5_SS: Excluded 0 artifact components. Saved to vandana/ica_data/5/5_SS_ica_raw.fif
+[5_SS] Created 153 labeled epochs.
 data loaded
-Processed 5_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/5/5_LOFT_ica_raw.fif
+[5_LOFT] Created 4052 labeled epochs.
 data loaded
-Processed 6_CA: Excluded 0 artifact components. Saved to vandana/ica_data/6/6_CA_ica_raw.fif
+[6_CA] Created 359 labeled epochs.
 data loaded
-Processed 6_DA: Excluded 0 artifact components. Saved to vandana/ica_data/6/6_DA_ica_raw.fif
+[6_DA] Created 358 labeled epochs.
 data loaded
-Processed 6_SS: Excluded 0 artifact components. Saved to vandana/ica_data/6/6_SS_ica_raw.fif
+[6_SS] Created 153 labeled epochs.
 data loaded
-Processed 6_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/6/6_LOFT_ica_raw.fif
+[6_LOFT] Created 4052 labeled epochs.
 data loaded
-Processed 9_CA: Excluded 0 artifact components. Saved to vandana/ica_data/9/9_CA_ica_raw.fif
+[9_CA] Created 358 labeled epochs.
 data loaded
-Processed 9_DA: Excluded 0 artifact components. Saved to vandana/ica_data/9/9_DA_ica_raw.fif
+[9_DA] Created 359 labeled epochs.
 data loaded
-Processed 9_SS: Excluded 0 artifact components. Saved to vandana/ica_data/9/9_SS_ica_raw.fif
+[9_SS] Created 358 labeled epochs.
 data loaded
-Processed 9_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/9/9_LOFT_ica_raw.fif
+[9_LOFT] Created 4916 labeled epochs.
 data loaded
-Processed 10_CA: Excluded 0 artifact components. Saved to vandana/ica_data/10/10_CA_ica_raw.fif
+[10_CA] Created 358 labeled epochs.
 data loaded
-Processed 10_DA: Excluded 0 artifact components. Saved to vandana/ica_data/10/10_DA_ica_raw.fif
+[10_DA] Created 358 labeled epochs.
 data loaded
-Processed 10_SS: Excluded 0 artifact components. Saved to vandana/ica_data/10/10_SS_ica_raw.fif
+[10_SS] Created 359 labeled epochs.
 data loaded
-Processed 10_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/10/10_LOFT_ica_raw.fif
+[10_LOFT] Created 4912 labeled epochs.
 data loaded
-Processed 11_CA: Excluded 0 artifact components. Saved to vandana/ica_data/11/11_CA_ica_raw.fif
+[11_CA] Created 358 labeled epochs.
 data loaded
-Processed 11_DA: Excluded 0 artifact components. Saved to vandana/ica_data/11/11_DA_ica_raw.fif
+[11_DA] Created 358 labeled epochs.
 data loaded
-Processed 11_SS: Excluded 0 artifact components. Saved to vandana/ica_data/11/11_SS_ica_raw.fif
+[11_SS] Created 358 labeled epochs.
 data loaded
-Processed 11_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/11/11_LOFT_ica_raw.fif
+[11_LOFT] Created 3684 labeled epochs.
 data loaded
-Processed 12_CA: Excluded 0 artifact components. Saved to vandana/ica_data/12/12_CA_ica_raw.fif
+[12_CA] Created 358 labeled epochs.
 data loaded
-Processed 12_DA: Excluded 0 artifact components. Saved to vandana/ica_data/12/12_DA_ica_raw.fif
+[12_DA] Created 358 labeled epochs.
 data loaded
-Processed 12_SS: Excluded 0 artifact components. Saved to vandana/ica_data/12/12_SS_ica_raw.fif
+[12_SS] Created 358 labeled epochs.
 data loaded
-Processed 12_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/12/12_LOFT_ica_raw.fif
+[12_LOFT] Created 3684 labeled epochs.
 data loaded
-Processed 13_CA: Excluded 0 artifact components. Saved to vandana/ica_data/13/13_CA_ica_raw.fif
+[13_CA] Created 359 labeled epochs.
 data loaded
-Processed 13_DA: Excluded 0 artifact components. Saved to vandana/ica_data/13/13_DA_ica_raw.fif
+[13_DA] Created 359 labeled epochs.
 data loaded
-Processed 13_SS: Excluded 0 artifact components. Saved to vandana/ica_data/13/13_SS_ica_raw.fif
+[13_SS] Created 358 labeled epochs.
 data loaded
-Processed 13_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/13/13_LOFT_ica_raw.fif
+[13_LOFT] Created 3743 labeled epochs.
 data loaded
-Processed 14_CA: Excluded 0 artifact components. Saved to vandana/ica_data/14/14_CA_ica_raw.fif
+[14_CA] Created 358 labeled epochs.
 data loaded
-Processed 14_DA: Excluded 0 artifact components. Saved to vandana/ica_data/14/14_DA_ica_raw.fif
+[14_DA] Created 358 labeled epochs.
 data loaded
-Processed 14_SS: Excluded 0 artifact components. Saved to vandana/ica_data/14/14_SS_ica_raw.fif
+[14_SS] Created 358 labeled epochs.
 data loaded
-Processed 14_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/14/14_LOFT_ica_raw.fif
+[14_LOFT] Created 3744 labeled epochs.
 data loaded
-Processed 17_CA: Excluded 0 artifact components. Saved to vandana/ica_data/17/17_CA_ica_raw.fif
+[17_CA] Created 358 labeled epochs.
 data loaded
-Processed 17_DA: Excluded 0 artifact components. Saved to vandana/ica_data/17/17_DA_ica_raw.fif
+[17_DA] Created 359 labeled epochs.
 data loaded
-Processed 17_SS: Excluded 0 artifact components. Saved to vandana/ica_data/17/17_SS_ica_raw.fif
+[17_SS] Created 358 labeled epochs.
 data loaded
-Processed 17_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/17/17_LOFT_ica_raw.fif
+[17_LOFT] Created 4262 labeled epochs.
 data loaded
-Processed 18_CA: Excluded 0 artifact components. Saved to vandana/ica_data/18/18_CA_ica_raw.fif
+[18_CA] Created 358 labeled epochs.
 data loaded
-Processed 18_DA: Excluded 0 artifact components. Saved to vandana/ica_data/18/18_DA_ica_raw.fif
+[18_DA] Created 358 labeled epochs.
 data loaded
-Processed 18_SS: Excluded 0 artifact components. Saved to vandana/ica_data/18/18_SS_ica_raw.fif
+[18_SS] Created 358 labeled epochs.
 data loaded
-Processed 18_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/18/18_LOFT_ica_raw.fif
+[18_LOFT] Created 4262 labeled epochs.
 data loaded
-Processed 19_CA: Excluded 0 artifact components. Saved to vandana/ica_data/19/19_CA_ica_raw.fif
+[19_CA] Created 358 labeled epochs.
 data loaded
-Processed 19_DA: Excluded 0 artifact components. Saved to vandana/ica_data/19/19_DA_ica_raw.fif
+[19_DA] Created 359 labeled epochs.
 data loaded
-Processed 19_SS: Excluded 0 artifact components. Saved to vandana/ica_data/19/19_SS_ica_raw.fif
+[19_SS] Created 359 labeled epochs.
 data loaded
-Processed 19_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/19/19_LOFT_ica_raw.fif
+[19_LOFT] Created 3697 labeled epochs.
 data loaded
-Processed 21_CA: Excluded 0 artifact components. Saved to vandana/ica_data/21/21_CA_ica_raw.fif
+[21_CA] Created 358 labeled epochs.
 data loaded
-Processed 21_DA: Excluded 0 artifact components. Saved to vandana/ica_data/21/21_DA_ica_raw.fif
+[21_DA] Created 358 labeled epochs.
 data loaded
-Processed 21_SS: Excluded 0 artifact components. Saved to vandana/ica_data/21/21_SS_ica_raw.fif
+[21_SS] Created 358 labeled epochs.
 data loaded
-Processed 21_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/21/21_LOFT_ica_raw.fif
+[21_LOFT] Created 3466 labeled epochs.
 data loaded
-Processed 22_CA: Excluded 0 artifact components. Saved to vandana/ica_data/22/22_CA_ica_raw.fif
+[22_CA] Created 358 labeled epochs.
 data loaded
-Processed 22_DA: Excluded 0 artifact components. Saved to vandana/ica_data/22/22_DA_ica_raw.fif
+[22_DA] Created 358 labeled epochs.
 data loaded
-Processed 22_SS: Excluded 0 artifact components. Saved to vandana/ica_data/22/22_SS_ica_raw.fif
-data loaded
-Processed 22_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/22/22_LOFT_ica_raw.fif
-data loaded
-Processed 23_CA: Excluded 0 artifact components. Saved to vandana/ica_data/23/23_CA_ica_raw.fif
-data loaded
-Processed 23_DA: Excluded 0 artifact components. Saved to vandana/ica_data/23/23_DA_ica_raw.fif
-data loaded
-Processed 23_SS: Excluded 0 artifact components. Saved to vandana/ica_data/23/23_SS_ica_raw.fif
-data loaded
-Processed 23_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/23/23_LOFT_ica_raw.fif
-data loaded
-Processed 24_CA: Excluded 0 artifact components. Saved to vandana/ica_data/24/24_CA_ica_raw.fif
-data loaded
-Processed 24_DA: Excluded 0 artifact components. Saved to vandana/ica_data/24/24_DA_ica_raw.fif
-data loaded
-Processed 24_SS: Excluded 0 artifact components. Saved to vandana/ica_data/24/24_SS_ica_raw.fif
-data loaded
-Processed 24_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/24/24_LOFT_ica_raw.fif
-data loaded
-Processed 25_CA: Excluded 0 artifact components. Saved to vandana/ica_data/25/25_CA_ica_raw.fif
-data loaded
-Processed 25_DA: Excluded 0 artifact components. Saved to vandana/ica_data/25/25_DA_ica_raw.fif
-data loaded
-Processed 25_SS: Excluded 0 artifact components. Saved to vandana/ica_data/25/25_SS_ica_raw.fif
-data loaded
-Processed 25_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/25/25_LOFT_ica_raw.fif
-data loaded
-Processed 26_CA: Excluded 0 artifact components. Saved to vandana/ica_data/26/26_CA_ica_raw.fif
-data loaded
-Processed 26_DA: Excluded 0 artifact components. Saved to vandana/ica_data/26/26_DA_ica_raw.fif
-data loaded
-Processed 26_SS: Excluded 0 artifact components. Saved to vandana/ica_data/26/26_SS_ica_raw.fif
-data loaded
-Processed 26_LOFT: Excluded 0 artifact components. Saved to vandana/ica_data/26/26_LOFT_ica_raw.fif
-ICA Cleaning Complete.
+[22_SS] Created 358 labeled epochs.
+data loaded
+[22_LOFT] Created 3467 labeled epochs.
+data loaded
+[23_CA] Created 358 labeled epochs.
+data loaded
+[23_DA] Created 358 labeled epochs.
+data loaded
+[23_SS] Created 353 labeled epochs.
+data loaded
+[23_LOFT] Created 3633 labeled epochs.
+data loaded
+[24_CA] Created 358 labeled epochs.
+data loaded
+[24_DA] Created 358 labeled epochs.
+data loaded
+[24_SS] Created 353 labeled epochs.
+data loaded
+[24_LOFT] Created 3633 labeled epochs.
+data loaded
+[25_CA] Created 359 labeled epochs.
+data loaded
+[25_DA] Created 358 labeled epochs.
+data loaded
+[25_SS] Created 358 labeled epochs.
+data loaded
+[25_LOFT] Created 3621 labeled epochs.
+data loaded
+[26_CA] Created 358 labeled epochs.
+data loaded
+[26_DA] Created 358 labeled epochs.
+data loaded
+[26_SS] Created 358 labeled epochs.
+data loaded
+[26_LOFT] Created 3621 labeled epochs.
+
+==================================================
+FINAL EPOCHING SUMMARY
+==================================================
+5_CA | Total: 358 | 0: 7, 1: 0, 2: 351, 5: 0
+5_DA | Total: 358 | 0: 313, 1: 0, 2: 0, 5: 45
+5_SS | Total: 153 | 0: 138, 1: 15, 2: 0, 5: 0
+5_LOFT | Total: 4052 | 0: 3538, 1: 30, 2: 428, 5: 56
+6_CA | Total: 359 | 0: 7, 1: 0, 2: 352, 5: 0
+6_DA | Total: 358 | 0: 314, 1: 0, 2: 0, 5: 44
+6_SS | Total: 153 | 0: 138, 1: 15, 2: 0, 5: 0
+6_LOFT | Total: 4052 | 0: 3538, 1: 30, 2: 428, 5: 56
+9_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+9_DA | Total: 359 | 0: 308, 1: 0, 2: 0, 5: 51
+9_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+9_LOFT | Total: 4916 | 0: 4389, 1: 30, 2: 441, 5: 56
+10_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+10_DA | Total: 358 | 0: 304, 1: 0, 2: 0, 5: 54
+10_SS | Total: 359 | 0: 329, 1: 30, 2: 0, 5: 0
+10_LOFT | Total: 4912 | 0: 4385, 1: 30, 2: 441, 5: 56
+11_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+11_DA | Total: 358 | 0: 306, 1: 0, 2: 0, 5: 52
+11_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+11_LOFT | Total: 3684 | 0: 3264, 1: 15, 2: 349, 5: 56
+12_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+12_DA | Total: 358 | 0: 308, 1: 0, 2: 0, 5: 50
+12_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+12_LOFT | Total: 3684 | 0: 3266, 1: 15, 2: 351, 5: 52
+13_CA | Total: 359 | 0: 1, 1: 0, 2: 358, 5: 0
+13_DA | Total: 359 | 0: 311, 1: 0, 2: 0, 5: 48
+13_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+13_LOFT | Total: 3743 | 0: 3334, 1: 30, 2: 327, 5: 52
+14_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+14_DA | Total: 358 | 0: 308, 1: 0, 2: 0, 5: 50
+14_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+14_LOFT | Total: 3744 | 0: 3336, 1: 30, 2: 326, 5: 52
+17_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+17_DA | Total: 359 | 0: 304, 1: 0, 2: 0, 5: 55
+17_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+17_LOFT | Total: 4262 | 0: 3922, 1: 30, 2: 258, 5: 52
+18_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+18_DA | Total: 358 | 0: 306, 1: 0, 2: 0, 5: 52
+18_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+18_LOFT | Total: 4262 | 0: 3922, 1: 30, 2: 258, 5: 52
+19_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+19_DA | Total: 359 | 0: 309, 1: 0, 2: 0, 5: 50
+19_SS | Total: 359 | 0: 329, 1: 30, 2: 0, 5: 0
+19_LOFT | Total: 3697 | 0: 3206, 1: 30, 2: 409, 5: 52
+21_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+21_DA | Total: 358 | 0: 310, 1: 0, 2: 0, 5: 48
+21_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+21_LOFT | Total: 3466 | 0: 2983, 1: 30, 2: 401, 5: 52
+22_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+22_DA | Total: 358 | 0: 306, 1: 0, 2: 0, 5: 52
+22_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+22_LOFT | Total: 3467 | 0: 2984, 1: 30, 2: 401, 5: 52
+23_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+23_DA | Total: 358 | 0: 306, 1: 0, 2: 0, 5: 52
+23_SS | Total: 353 | 0: 323, 1: 30, 2: 0, 5: 0
+23_LOFT | Total: 3633 | 0: 3267, 1: 30, 2: 284, 5: 52
+24_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+24_DA | Total: 358 | 0: 305, 1: 0, 2: 0, 5: 53
+24_SS | Total: 353 | 0: 323, 1: 30, 2: 0, 5: 0
+24_LOFT | Total: 3633 | 0: 3267, 1: 30, 2: 284, 5: 52
+25_CA | Total: 359 | 0: 1, 1: 0, 2: 358, 5: 0
+25_DA | Total: 358 | 0: 303, 1: 0, 2: 0, 5: 55
+25_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+25_LOFT | Total: 3621 | 0: 3347, 1: 30, 2: 192, 5: 52
+26_CA | Total: 358 | 0: 1, 1: 0, 2: 357, 5: 0
+26_DA | Total: 358 | 0: 303, 1: 0, 2: 0, 5: 55
+26_SS | Total: 358 | 0: 328, 1: 30, 2: 0, 5: 0
+26_LOFT | Total: 3621 | 0: 3348, 1: 30, 2: 191, 5: 52
+==================================================

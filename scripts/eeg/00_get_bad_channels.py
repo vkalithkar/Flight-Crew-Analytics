@@ -24,7 +24,7 @@ auto_bad_dict = {f"{p}_{run}": [] for p in pilots for run in runs}
 # Preprocess all 68 files
 for pilot in pilots: 
     # Create the directory for this pilot if it doesn't exist
-    output_dir = f'vandana/raw_filtered_eeg_plots/{pilot}'
+    output_dir = f'data/eeg_preprocess/raw_filtered_eeg_plots/{pilot}'
     os.makedirs(output_dir, exist_ok=True)
 
     for run in runs:
@@ -77,7 +77,7 @@ print("autobad dict")
 print(auto_bad_dict)
 
 # Json save the auto_bad_dict 
-output_path = 'vandana/pyprep_results.json'
+output_path = 'data/eeg_preprocess/pyprep_results.json'
 
 with open(output_path, 'w') as f:
     json.dump(auto_bad_dict, f, indent=4)
