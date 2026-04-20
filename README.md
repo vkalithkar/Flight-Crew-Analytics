@@ -30,16 +30,9 @@ This project explores physiological data collected fromm pilot/copilot pairs acr
 
 ## Research Questions
 
-Can we train a model to predict pilot cognitive states?
-    - Channelized Attention (CA)
-    - Diverted Attention (DA)
-    - Startle/Surprise (SS)
+**Can we train a model to predict pilot cognitive states?**
+    
+- Channelized Attention (CA)
+- Diverted Attention (DA)
+- Startle/Surprise (SS)
 
-## Repository Structure
-Flight-Crew-Analytics/
-│
-├── scripts/
-├── config/
-├── output/
-├── data/
-└── pipeline.slurm
