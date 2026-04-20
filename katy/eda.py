@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # getting the shape of the CA df for pilot 5
-df5 = pd.read_csv('katy/clean/25_LOFT_clean.csv')
+df5 = pd.read_csv('katy/clean2/25_LOFT_clean.csv')
 print('user 5 CA df is of shape:')
 print(df5.shape)
 print('---xxx---')
@@ -43,7 +43,7 @@ for state, color in state_colors.items():
 plt.xlabel('Time (seconds)')
 plt.ylabel('Respirations')
 plt.title('Time vs. Respirations, 25 LOFT Cleaned')
-plt.savefig('katy/loft_resp_cleaned_25.png')
+plt.savefig('katy/loft_resp_cleaned_25_2.png')
 plt.clf()
 
 # Plot 2: ECG
@@ -55,7 +55,7 @@ for state, color in state_colors.items():
 plt.xlabel('Time (seconds)')
 plt.ylabel('ECG')
 plt.title('Time vs. ECG, 25 LOFT Cleaned')
-plt.savefig('katy/loft_ecg_25_cleaned.png')
+plt.savefig('katy/loft_ecg_25_cleaned_2.png')
 plt.clf()
 
 # Plot 3: GSR
@@ -67,5 +67,5 @@ for state, color in state_colors.items():
 plt.xlabel('Time (seconds)')
 plt.ylabel('GSR')
 plt.title('Time vs. GSR, 25 LOFT Cleaned')
-plt.savefig('katy/loft_gsr_25_cleaned.png')
+plt.savefig('katy/loft_gsr_25_cleaned_2.png')
 plt.clf()

@@ -7,9 +7,14 @@ Usage (from repo root):
 
 For each subject folder in data/raw/, reads the four CSVs (CA, DA, LOFT, SS),
 cleans EEG, ECG, Respiration, and GSR signals with NeuroKit2, and writes one
-cleaned CSV per subject per file type into katy/clean/.
+cleaned CSV per subject per file type into katy/clean2/.
 
 Sampling rate : 256 Hz (all sensors, B-Alert X24 + NeXus-10)
+
+Changes from v1:
+  - RSP: switched to biosppy method + second-pass 1 Hz low-pass
+  - ECG: ADC-to-physical-unit scaling before cleaning + R-peak validation
+  - All signals: post-cleaning sanity check (flags >1% samples beyond ±5 SD)
 """
 
 import os
@@ -27,7 +32,7 @@ import neurokit2 as nk
 # ---------------------------------------------------------------------------
 REPO_ROOT  = Path(__file__).resolve().parent.parent
 RAW_DIR    = REPO_ROOT / "data" / "raw"
-OUT_DIR    = REPO_ROOT / "katy" / "clean"
+OUT_DIR    = REPO_ROOT / "katy" / "clean2"
 LOG_FILE   = REPO_ROOT / "katy" / "preprocess.log"
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -53,15 +58,45 @@ FS = 256   # Hz – all sensors
 
 FILE_TYPES = ["CA", "DA", "LOFT", "SS"]
 
-# EEG_CHANNELS = [
-#     "EEG_FP1", "EEG_F7",  "EEG_F8",  "EEG_T4",  "EEG_T6",
-#     "EEG_T5",  "EEG_T3",  "EEG_FP2", "EEG_O1",  "EEG_P3",
-#     "EEG_Pz",  "EEG_F3",  "EEG_Fz",  "EEG_F4",  "EEG_C4",
-#     "EEG_P4",  "EEG_POz", "EEG_C3",  "EEG_Cz",  "EEG_O2",
-# ]
+# NeXus-10 ECG scaling factor: raw ADC counts → physical units (µV).
+# VERIFY this against your NeXus-10 hardware manual before running –
+# the exact factor depends on gain settings used during acquisition.
+NEXUS_ECG_SCALE = 1.22e-4   # µV per LSB  (placeholder – confirm with manual)
+
+# Sanity-check threshold: flag a signal if more than this fraction of samples
+# exceed ±SANITY_SD_THRESHOLD standard deviations from the signal mean.
+SANITY_SD_THRESHOLD  = 5.0   # SD
+SANITY_OUTLIER_PCT   = 1.0   # percent
 
 # Event codes 3 and 4 are documented as erroneous – remap to 0
 BAD_EVENT_CODES = {3: 0, 4: 0}
+
+
+# ---------------------------------------------------------------------------
+# Sanity check
+# ---------------------------------------------------------------------------
+
+def sanity_check(signal: pd.Series, signal_name: str,
+                 subject_id: str, file_type: str) -> None:
+    """
+    Warn if more than SANITY_OUTLIER_PCT % of samples lie beyond
+    ±SANITY_SD_THRESHOLD SDs from the signal mean.
+    Call this after every cleaning step.
+    """
+    arr = signal.to_numpy(dtype=float)
+    if np.nanstd(arr) == 0:
+        log.warning(
+            "SANITY – subject %s / %s / %s: zero-variance signal.",
+            subject_id, file_type, signal_name,
+        )
+        return
+    z = np.abs((arr - np.nanmean(arr)) / np.nanstd(arr))
+    pct_outlier = (z > SANITY_SD_THRESHOLD).mean() * 100
+    if pct_outlier > SANITY_OUTLIER_PCT:
+        log.warning(
+            "SANITY – subject %s / %s / %s: %.1f%% of samples exceed %g SD",
+            subject_id, file_type, signal_name, pct_outlier, SANITY_SD_THRESHOLD,
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -76,10 +111,16 @@ def clean_event_column(series: pd.Series) -> pd.Series:
 def clean_ecg(signal: pd.Series) -> pd.Series:
     """
     Clean the ECG signal with NeuroKit2.
-    Returns a cleaned 1-D Series of the same length.
+
+    Step 1 – scale raw ADC counts to physical units using NEXUS_ECG_SCALE.
+             NeuroKit2's internal operations assume millivolt-scale input;
+             passing raw counts (order of magnitude ~10^4) can degrade
+             cleaning quality.
+    Step 2 – nk.ecg_clean (neurokit method): 0.5 Hz high-pass + powerline notch.
+
     Falls back to bandpass-only on processing errors.
     """
-    arr = signal.to_numpy(dtype=float)
+    arr = signal.to_numpy(dtype=float) * NEXUS_ECG_SCALE   # ADC → physical units
     try:
         cleaned = nk.ecg_clean(arr, sampling_rate=FS, method="neurokit")
     except Exception as exc:
@@ -92,20 +133,56 @@ def clean_ecg(signal: pd.Series) -> pd.Series:
     return pd.Series(cleaned, index=signal.index, name=signal.name)
 
 
-def clean_respiration(signal: pd.Series) -> pd.Series:
+def validate_ecg_peaks(signal: pd.Series, subject_id: str) -> None:
     """
-    Clean the Respiration signal.
-    NeuroKit2's rsp_clean applies a bandpass (0.1–0.35 Hz by default)
-    suited to chest-belt respiration data.
+    Detect R-peaks in a cleaned ECG and log the estimated heart rate.
+    Emits a warning if the derived BPM is outside the plausible range 40–180.
+
+    Call this on at least one subject before running the full pipeline to
+    confirm that the ADC scaling and cleaning are producing detectable peaks.
     """
     arr = signal.to_numpy(dtype=float)
     try:
-        cleaned = nk.rsp_clean(arr, sampling_rate=FS, method="khodadad2018")
+        _, info = nk.ecg_peaks(arr, sampling_rate=FS)
+        n_peaks = len(info["ECG_R_Peaks"])
+        duration_min = len(arr) / FS / 60
+        bpm = n_peaks / duration_min if duration_min > 0 else 0
+        log.info(
+            "ECG validation – subject %s: %d R-peaks detected (%.1f bpm)",
+            subject_id, n_peaks, bpm,
+        )
+        if not (40 < bpm < 180):
+            log.warning(
+                "ECG validation – implausible heart rate for subject %s: %.1f bpm "
+                "(check NEXUS_ECG_SCALE constant)",
+                subject_id, bpm,
+            )
+    except Exception as exc:
+        log.warning("ECG peak validation failed for subject %s: %s", subject_id, exc)
+
+
+def clean_respiration(signal: pd.Series) -> pd.Series:
+    """
+    Clean the Respiration signal.
+
+    Uses biosppy method (more appropriate for chest-belt strain gauges than
+    khodadad2018, which targets PPG-derived respiration).  A second-pass
+    1 Hz low-pass further suppresses residual high-frequency noise while
+    keeping the full breath-cycle waveform intact (normal RR ~0.2–0.5 Hz).
+    """
+    arr = signal.to_numpy(dtype=float)
+    try:
+        cleaned = nk.rsp_clean(arr, sampling_rate=FS, method="biosppy")
+        # Second-pass low-pass to remove residual HF buzz
+        cleaned = nk.signal_filter(
+            cleaned, sampling_rate=FS,
+            highcut=1.0, method="butterworth", order=2,
+        )
     except Exception as exc:
         log.warning("RSP clean failed (%s) – using basic bandpass fallback.", exc)
         cleaned = nk.signal_filter(
             arr, sampling_rate=FS,
-            lowcut=0.1, highcut=0.35,
+            lowcut=0.1, highcut=1.0,
             method="butterworth", order=2,
         )
     return pd.Series(cleaned, index=signal.index, name=signal.name)
@@ -116,6 +193,9 @@ def clean_gsr(signal: pd.Series) -> pd.Series:
     Clean the GSR / EDA signal.
     nk.eda_clean applies a low-pass filter (default 3 Hz) to remove
     high-frequency noise while preserving the slow skin-conductance response.
+
+    Note: tonic/phasic decomposition (nk.eda_process) should be performed
+    downstream in the feature-extraction stage, not here.
     """
     arr = signal.to_numpy(dtype=float)
     try:
@@ -130,46 +210,22 @@ def clean_gsr(signal: pd.Series) -> pd.Series:
     return pd.Series(cleaned, index=signal.index, name=signal.name)
 
 
-# def clean_eeg_channel(signal: pd.Series, ch_name: str) -> pd.Series:
-#     """
-#     Clean a single EEG channel:
-#       1. Bandpass  1–40 Hz  (removes DC drift + high-freq noise)
-#       2. Notch     60 Hz    (US power-line interference)
-#     NeuroKit2 does not have a dedicated single-channel EEG cleaner, so we
-#     chain signal_filter calls directly.
-#     """
-#     arr = signal.to_numpy(dtype=float)
-#     # Replace any NaN with channel mean before filtering
-#     nan_mask = np.isnan(arr)
-#     if nan_mask.any():
-#         arr[nan_mask] = np.nanmean(arr)
-
-#     try:
-#         # Bandpass
-#         bp = nk.signal_filter(
-#             arr, sampling_rate=FS,
-#             lowcut=1.0, highcut=40.0,
-#             method="butterworth", order=4,
-#         )
-#         # Notch at 60 Hz
-#         cleaned = nk.signal_filter(
-#             bp, sampling_rate=FS,
-#             method="powerline", powerline=60,
-#         )
-#     except Exception as exc:
-#         log.warning("EEG channel %s clean failed (%s) – skipping filter.", ch_name, exc)
-#         cleaned = arr
-
-#     return pd.Series(cleaned, index=signal.index, name=signal.name)
-
-
 # ---------------------------------------------------------------------------
 # Per-file preprocessing
 # ---------------------------------------------------------------------------
 
-def preprocess_file(csv_path: Path, subject_id: str, file_type: str) -> pd.DataFrame:
+def preprocess_file(csv_path: Path, subject_id: str, file_type: str,
+                    validate_ecg: bool = False) -> pd.DataFrame:
     """
     Load one raw CSV, preprocess all physiological signals, return cleaned DataFrame.
+
+    Parameters
+    ----------
+    csv_path     : path to the raw CSV file
+    subject_id   : numeric subject identifier string
+    file_type    : one of CA / DA / LOFT / SS
+    validate_ecg : if True, run R-peak validation on the cleaned ECG and log BPM.
+                   Set True for the first subject processed as a pipeline sanity check.
     """
     log.info("  Loading  %s", csv_path.name)
     df = pd.read_csv(csv_path)
@@ -183,20 +239,13 @@ def preprocess_file(csv_path: Path, subject_id: str, file_type: str) -> pd.DataF
     else:
         log.warning("  No 'Event' column found in %s", csv_path.name)
 
-    # # ---- EEG channels -------------------------------------------------------
-    # present_eeg = [ch for ch in EEG_CHANNELS if ch in df.columns]
-    # missing_eeg = set(EEG_CHANNELS) - set(present_eeg)
-    # if missing_eeg:
-    #     log.warning("  Missing EEG channels: %s", sorted(missing_eeg))
-
-    # for ch in present_eeg:
-    #     df[ch] = clean_eeg_channel(df[ch], ch)
-    # log.info("  EEG      cleaned (%d channels)", len(present_eeg))
-
     # ---- ECG ----------------------------------------------------------------
     if "ECG" in df.columns:
         df["ECG"] = clean_ecg(df["ECG"])
         log.info("  ECG      cleaned")
+        sanity_check(df["ECG"], "ECG", subject_id, file_type)
+        if validate_ecg:
+            validate_ecg_peaks(df["ECG"], subject_id)
     else:
         log.warning("  No 'ECG' column found in %s", csv_path.name)
 
@@ -204,6 +253,7 @@ def preprocess_file(csv_path: Path, subject_id: str, file_type: str) -> pd.DataF
     if "R" in df.columns:
         df["R"] = clean_respiration(df["R"])
         log.info("  RSP      cleaned")
+        sanity_check(df["R"], "R", subject_id, file_type)
     else:
         log.warning("  No 'R' (Respiration) column found in %s", csv_path.name)
 
@@ -211,6 +261,7 @@ def preprocess_file(csv_path: Path, subject_id: str, file_type: str) -> pd.DataF
     if "GSR" in df.columns:
         df["GSR"] = clean_gsr(df["GSR"])
         log.info("  GSR      cleaned")
+        sanity_check(df["GSR"], "GSR", subject_id, file_type)
     else:
         log.warning("  No 'GSR' column found in %s", csv_path.name)
 
@@ -247,6 +298,7 @@ def main():
 
     total_written = 0
     errors = []
+    first_subject = True   # used to trigger ECG peak validation once
 
     for subj_dir in subject_dirs:
         subj_id = subj_dir.name
@@ -261,7 +313,11 @@ def main():
                 continue
 
             try:
-                cleaned_df = preprocess_file(csv_path, subj_id, ftype)
+                cleaned_df = preprocess_file(
+                    csv_path, subj_id, ftype,
+                    validate_ecg=first_subject,   # validate on first file only
+                )
+                first_subject = False
 
                 out_path = OUT_DIR / f"{subj_id}_{ftype}_clean.csv"
                 cleaned_df.to_csv(out_path, index=False)
