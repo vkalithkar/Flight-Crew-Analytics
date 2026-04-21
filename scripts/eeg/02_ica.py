@@ -19,8 +19,8 @@ runs = ["CA", "DA", "SS","LOFT"]
 
 # Preprocess all 68 files
 for pilot in pilots: 
-    input_dir = f'vandana/cleaned_data/{pilot}'
-    output_dir = f'vandana/ica_data/{pilot}'
+    input_dir = f'data/eeg_preprocess/interpolated_data/{pilot}'
+    output_dir = f'data/eeg_preprocess/ica_data/{pilot}'
     os.makedirs(output_dir, exist_ok=True)
 
     for run in runs:

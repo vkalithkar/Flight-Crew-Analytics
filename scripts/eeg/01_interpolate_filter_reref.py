@@ -16,12 +16,12 @@ pilots = [5,6,9,10,11,12,13,14,17,18,19,21,22,23,24,25,26]
 runs = ["CA", "DA", "SS","LOFT"]
 
 # Load the Bad Channel Dictionary
-with open('vandana/pyprep_results.json', 'r') as f:
+with open('data/eeg_preprocess/pyprep_results.json', 'r') as f:
     bad_dict = json.load(f)
 
 # Preprocess all 68 files
 for pilot in pilots: 
-    output_dir = f'vandana/cleaned_data/{pilot}'
+    output_dir = f'data/eeg_preprocess/interpolated_data/{pilot}'
     os.makedirs(output_dir, exist_ok=True)
 
     for run in runs:
