@@ -278,6 +278,7 @@ dependencies:
   - nbformat=5.10.4
   - ncurses=6.5
   - nest-asyncio=1.6.0
+  - neurokit2=0.2.13
   - nibabel=5.4.0
   - nilearn=0.13.1
   - nlohmann_json=3.12.0
@@ -345,6 +346,7 @@ dependencies:
   - pytz=2026.1.post1
   - pyvista=0.47.3
   - pyvistaqt=0.11.4
+  - pywavelets=1.9.0
   - pyyaml=6.0.3
   - pyzmq=27.1.0
   - qdarkstyle=3.2.3
