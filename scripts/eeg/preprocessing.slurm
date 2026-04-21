@@ -6,7 +6,6 @@
 #SBATCH --time=1:00:00 # d-hh:mm:ss or just No. of minutes
 #SBATCH --mem=48G # how much physical memory (all by default)
 #SBATCH --mail-type=FAIL,BEGIN,END # when to email you
-#SBATCH --mail-user=vkalithkar@wm.edu # who to email
 #SBATCH -o log/preprocessing_eeg/eeg_preprocess.out #STDOUT to file (%j is jobID)
 #SBATCH -e log/preprocessing_eeg/eeg_preprocess.err #STDERR to file (%j is jobID)
 
