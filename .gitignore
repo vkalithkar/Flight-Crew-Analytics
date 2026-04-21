@@ -209,6 +209,8 @@ __marimo__/
 data/raw/**/*.csv
 data/raw/**/*.zip
 data/clean/
+data/ecg_gsr_resp_preprocess/*.csv
+
 
 vandana/raw_filtered_eeg_plots
 vandana/cleaned_data
@@ -224,3 +226,4 @@ data/eeg_preprocess/ica_data
 data/eeg_preprocess/interpolated_data
 log/preprocessing_eeg/*.out
 log/preprocessing_eeg/*.err
+log/preprocessing_ecg_gsr_resp.log/
