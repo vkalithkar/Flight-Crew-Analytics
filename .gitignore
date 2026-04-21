@@ -225,10 +225,9 @@ data/eeg_preprocess/epoched_data
 data/eeg_preprocess/ica_data
 data/eeg_preprocess/interpolated_data
 
-log/preprocessing_eeg/*.out
-log/preprocessing_eeg/*.err
+log/feature_engineering/
+log/preprocessing_ecg_gsr_resp/
+log/preprocessing_eeg/eeg_preprocess.err
+log/preprocessing_eeg/eeg_preprocess.out
 
-log/preprocessing_ecg_gsr_resp/*.err
-log/preprocessing_ecg_gsr_resp/*.out
-log/preprocessing_ecg_gsr_resp/*.log
 output/*.csv
