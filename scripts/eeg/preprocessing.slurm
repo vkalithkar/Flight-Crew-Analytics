@@ -14,7 +14,7 @@ module load miniforge3
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate flight2
 
-python ./scripts/eeg/00_get_bad_channels.py
+#python ./scripts/eeg/00_get_bad_channels.py
 python ./scripts/eeg/01_interpolate_filter_reref.py
 python ./scripts/eeg/02_ica.py
 python ./scripts/eeg/03_epoching.py

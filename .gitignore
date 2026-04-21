@@ -217,3 +217,7 @@ vandana/epoched_data
 
 katy/clean/
 katy/clean2/
+
+data/eeg_preprocess/epoched_data
+data/eeg_preprocess/ica_data
+data/eeg_preprocess/interpolated_data
