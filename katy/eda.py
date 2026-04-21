@@ -1,71 +1,69 @@
 #!/usr/bin/env python3
 
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# getting the shape of the CA df for pilot 5
-df5 = pd.read_csv('katy/clean2/21_LOFT_clean.csv')
-print('user 5 CA df is of shape:')
-print(df5.shape)
-print('---xxx---')
-
-# understanding how long the data is, temporally
-first_time = df5['TimeSecs'].iloc[0]
-last_time = df5['TimeSecs'].iloc[-1]
-print(f'Time is {(last_time-first_time):.3f} seconds, which is {((last_time-first_time)/60):.3f} minutes.')
-print('---xxx---')
-
-# understanding what the other columns are
-# 0 = no event, 2 = CA state
-print('The two events experienced in this data and their instances are:')
-print(df5['Event'].value_counts())
-print('---xxx---')
+pilots = [5, 6, 9, 10, 11, 12, 13, 14, 17, 18, 19, 21, 22, 23, 24, 25, 26]
+file_types = ['CA', 'DA', 'SS', 'LOFT']
 
 state_colors = {
     1: 'red',
     2: 'yellow',
     5: 'green',
-    # add as many states as you need
 }
 
-# define CA state blocks once, reuse across all plots
-state_col = df5['Event']
-changes = state_col != state_col.shift()
-blocks = df5[changes].copy()
-blocks['end_time'] = blocks['TimeSecs'].shift(-1).fillna(df5['TimeSecs'].iloc[-1])
+for pilot_id in pilots:
+    for file_type in file_types:
+        FILE_NAME = f'{pilot_id}_{file_type}_clean'  # was int + str, now f-string
+        out_dir = f'katy/plots/{pilot_id}'
+        os.makedirs(out_dir, exist_ok=True)  # create per-pilot dir if needed
 
-# Plot 1: Respirations
-plt.figure(figsize=(20,8))
-plt.plot(df5['TimeSecs'], df5['R'], linewidth = 0.1)
-for state, color in state_colors.items():
-    for _, row in blocks[blocks['Event'] == state].iterrows():
-        plt.axvspan(row['TimeSecs'], row['end_time'], color=color, alpha=0.3)
-plt.xlabel('Time (seconds)')
-plt.ylabel('Respirations')
-plt.title('Time vs. Respirations, 21 LOFT Cleaned')
-plt.savefig('katy/loft_resp_21.png')
-plt.clf()
+        df = pd.read_csv(f'katy/clean2/{FILE_NAME}.csv')
+        print(f'{FILE_NAME} shape:')
+        print(df.shape)
+        print('---xxx---')
 
-# Plot 2: ECG
-plt.figure(figsize=(20,8))
-plt.plot(df5['TimeSecs'], df5['ECG'], linewidth=0.1)
-for state, color in state_colors.items():
-    for _, row in blocks[blocks['Event'] == state].iterrows():
-        plt.axvspan(row['TimeSecs'], row['end_time'], color=color, alpha=0.3)
-plt.xlabel('Time (seconds)')
-plt.ylabel('ECG')
-plt.title('Time vs. ECG, 21 LOFT Cleaned')
-plt.savefig('katy/loft_ecg_21.png')
-plt.clf()
+        print('Events in this data:')
+        print(df['Event'].value_counts())
+        print('---xxx---')
 
-# Plot 3: GSR
-plt.figure(figsize=(20,8))
-plt.plot(df5['TimeSecs'], df5['GSR'], linewidth=0.3)
-for state, color in state_colors.items():
-    for _, row in blocks[blocks['Event'] == state].iterrows():
-        plt.axvspan(row['TimeSecs'], row['end_time'], color=color, alpha=0.3)
-plt.xlabel('Time (seconds)')
-plt.ylabel('GSR')
-plt.title('Time vs. GSR, 21 LOFT Cleaned')
-plt.savefig('katy/loft_gsr_21.png')
-plt.clf()
+        state_col = df['Event']
+        changes = state_col != state_col.shift()
+        blocks = df[changes].copy()
+        blocks['end_time'] = blocks['TimeSecs'].shift(-1).fillna(df['TimeSecs'].iloc[-1])
+
+        def add_state_shading(blocks, state_colors):
+            for event_id, color in state_colors.items():  # renamed to avoid collision
+                for _, row in blocks[blocks['Event'] == event_id].iterrows():
+                    plt.axvspan(row['TimeSecs'], row['end_time'], color=color, alpha=0.3)
+
+        # Plot 1: Respirations
+        plt.figure(figsize=(20, 8))
+        plt.plot(df['TimeSecs'], df['R'], linewidth=1.0)
+        add_state_shading(blocks, state_colors)
+        plt.xlabel('Time (seconds)')
+        plt.ylabel('Respirations')
+        plt.title(f'Time vs. Respirations, {FILE_NAME}')
+        plt.savefig(f'{out_dir}/{FILE_NAME}_resp.png')
+        plt.clf()
+
+        # Plot 2: ECG
+        plt.figure(figsize=(20, 8))
+        plt.plot(df['TimeSecs'], df['ECG'], linewidth=1.0)
+        add_state_shading(blocks, state_colors)
+        plt.xlabel('Time (seconds)')
+        plt.ylabel('ECG')
+        plt.title(f'Time vs. ECG, {FILE_NAME}')
+        plt.savefig(f'{out_dir}/{FILE_NAME}_ecg.png')
+        plt.clf()
+
+        # Plot 3: GSR
+        plt.figure(figsize=(20, 8))
+        plt.plot(df['TimeSecs'], df['GSR'], linewidth=1.0)
+        add_state_shading(blocks, state_colors)
+        plt.xlabel('Time (seconds)')
+        plt.ylabel('GSR')
+        plt.title(f'Time vs. GSR, {FILE_NAME}')
+        plt.savefig(f'{out_dir}/{FILE_NAME}_gsr.png')
+        plt.clf()
