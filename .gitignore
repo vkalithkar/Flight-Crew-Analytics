@@ -231,3 +231,4 @@ log/preprocessing_eeg/*.err
 log/preprocessing_ecg_gsr_resp/*.err
 log/preprocessing_ecg_gsr_resp/*.out
 log/preprocessing_ecg_gsr_resp/*.log
+output/*.csv

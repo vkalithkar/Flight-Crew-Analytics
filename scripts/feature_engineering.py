@@ -1,9 +1,11 @@
+#!/usr/bin/env python
+
 import numpy as np
 import pandas as pd
 from pathlib import Path
 import neurokit2 as nk
 from scipy.stats import skew, kurtosis
-
+import mne
 
 FS = 256  # sampling rate
 
@@ -13,30 +15,54 @@ STEP_RATIO = 0.2
 WINDOW_SIZE = FS * WINDOW_SEC
 STEP_SIZE = int(WINDOW_SIZE * STEP_RATIO)
 
-INPUT_DIR = Path("./katy/")
-OUTPUT_DIR = Path("./output")
 
-def eeg_features(signal):
-    sub_win = FS * 3  # 3 second chunks
-    powers = []
-    variances = []
+INPUT_DIR = Path("./data/ecg_gsr_resp_preprocess")
+EEG_DIR = Path("./data/eeg_preprocess/epoched_data")
+OUTPUT_DIR = Path("./output")
+OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+
+def eeg_features(epoch):
+    """
+    epoch: (n_channels, n_times)
+    """
+
+    feats = {}
+
+    # collapse spatially (robust baseline)
+    signal = epoch.mean(axis=0)
+
+    sub_win = FS * 3
+    powers, variances = [], []
 
     for i in range(0, len(signal) - sub_win, sub_win):
         chunk = signal[i:i + sub_win]
-
         powers.append(np.sum(chunk ** 2))
         variances.append(np.var(chunk))
 
-    if len(powers) == 0:
-        return {}
+    if len(powers) > 0:
+        feats.update({
+            "eeg_power_mean": np.mean(powers),
+            "eeg_power_std": np.std(powers),
+            "eeg_var_mean": np.mean(variances),
+            "eeg_var_std": np.std(variances),
+        })
 
-    return {
-        "eeg_power_mean": np.mean(powers),
-        "eeg_power_std": np.std(powers),
-        "eeg_var_mean": np.mean(variances),
-        "eeg_var_std": np.std(variances),
-    }
+    # spatial structure
+    channel_power = np.sum(epoch ** 2, axis=1)
+    feats.update({
+        "eeg_channel_power_mean": np.mean(channel_power),
+        "eeg_channel_power_std": np.std(channel_power),
+        "eeg_spatial_var": np.mean(np.var(epoch, axis=1)),
+    })
 
+    feats.update({
+        "eeg_mean": np.mean(signal),
+        "eeg_std": np.std(signal),
+        "eeg_skew": skew(signal),
+        "eeg_kurtosis": kurtosis(signal),
+    })
+
+    return feats
 
 def ecg_features(signal):
     try:
@@ -86,9 +112,15 @@ def basic_stats(signal, prefix):
     }
 
 
-def create_feature_table(df):
-    X = []
-    y = []
+def create_feature_table(df, eeg_epochs):
+    """
+    df = CSV with ECG/GSR/RSP + labels
+    eeg_epochs = MNE Epochs object aligned to df windows
+    """
+
+    X, y = [], []
+
+    eeg_data = eeg_epochs.get_data()  # (n_epochs, ch, time)
 
     for start in range(0, len(df) - WINDOW_SIZE, STEP_SIZE):
         end = start + WINDOW_SIZE
@@ -96,31 +128,25 @@ def create_feature_table(df):
 
         feats = {}
 
+        epoch_idx = start // STEP_SIZE
 
-        if "EEG" in df.columns:
-            feats.update(eeg_features(window["EEG"].values))
-            feats.update(basic_stats(window["EEG"].values, "eeg"))
-
+        if epoch_idx < len(eeg_data):
+            feats.update(eeg_features(eeg_data[epoch_idx]))
 
         if "ECG" in df.columns:
             feats.update(ecg_features(window["ECG"].values))
             feats.update(basic_stats(window["ECG"].values, "ecg"))
 
-
         if "GSR" in df.columns:
             feats.update(gsr_features(window["GSR"].values))
             feats.update(basic_stats(window["GSR"].values, "gsr"))
-
 
         if "R" in df.columns:
             feats.update(rsp_features(window["R"].values))
             feats.update(basic_stats(window["R"].values, "rsp"))
 
-
         if "Event" in df.columns:
-            label = window["Event"].mode()[0]
-            y.append(label)
-
+            y.append(window["Event"].mode()[0])
 
         feats["subject_id"] = window["subject_id"].iloc[0]
         feats["file_type"] = window["file_type"].iloc[0]
@@ -137,7 +163,12 @@ def main():
         print(f"Processing {file.name}")
         df = pd.read_csv(file)
 
-        X, y = create_feature_table(df)
+        subject_id = file.stem.split("_")[0]
+        eeg_file = EEG_DIR / subject_id / file.name.replace("_clean.csv", "_epo.fif")
+
+        eeg_epochs = mne.read_epochs(eeg_file, preload=True, verbose=False)
+
+        X, y = create_feature_table(df, eeg_epochs)
 
         X["label"] = y
         all_features.append(X)
