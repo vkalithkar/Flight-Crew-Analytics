@@ -231,3 +231,4 @@ log/preprocessing_eeg/eeg_preprocess.err
 log/preprocessing_eeg/eeg_preprocess.out
 
 output/*.csv
+data/feature_extracted/
