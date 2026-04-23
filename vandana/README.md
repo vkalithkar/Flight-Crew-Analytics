@@ -1,7 +1,6 @@
 Converting each pilot's run's data  (epochs x num timepoint data input from channel)
 * There are (num epoch) rows -> 5_LOFT has 4052 epochs
-* There are 512 time points snapshots (256 sampling freq per sec x epoching with 2 sec windows duration) x 20 channels = 10260 cols
-* There are 20 MNE Metadata cols
+* There are 513 time points snapshots (256 sampling freq per sec x epoching with 2 sec windows duration + 1) x 20 channels = 10260 cols
 * There is one labeling cols
 
 
