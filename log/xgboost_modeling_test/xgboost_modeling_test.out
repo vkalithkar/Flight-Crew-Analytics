@@ -1,0 +1,77 @@
+appended: pilot 5 and run CA
+appended: pilot 5 and run DA
+appended: pilot 5 and run SS
+appended: pilot 5 and run LOFT
+appended: pilot 6 and run CA
+appended: pilot 6 and run DA
+appended: pilot 6 and run SS
+appended: pilot 6 and run LOFT
+appended: pilot 9 and run CA
+appended: pilot 9 and run DA
+appended: pilot 9 and run SS
+appended: pilot 9 and run LOFT
+appended: pilot 10 and run CA
+appended: pilot 10 and run DA
+appended: pilot 10 and run SS
+appended: pilot 10 and run LOFT
+appended: pilot 11 and run CA
+appended: pilot 11 and run DA
+appended: pilot 11 and run SS
+appended: pilot 11 and run LOFT
+appended: pilot 12 and run CA
+appended: pilot 12 and run DA
+appended: pilot 12 and run SS
+appended: pilot 12 and run LOFT
+appended: pilot 13 and run CA
+appended: pilot 13 and run DA
+appended: pilot 13 and run SS
+appended: pilot 13 and run LOFT
+appended: pilot 14 and run CA
+appended: pilot 14 and run DA
+appended: pilot 14 and run SS
+appended: pilot 14 and run LOFT
+appended: pilot 17 and run CA
+appended: pilot 17 and run DA
+appended: pilot 17 and run SS
+appended: pilot 17 and run LOFT
+appended: pilot 18 and run CA
+appended: pilot 18 and run DA
+appended: pilot 18 and run SS
+appended: pilot 18 and run LOFT
+appended: pilot 19 and run CA
+appended: pilot 19 and run DA
+appended: pilot 19 and run SS
+appended: pilot 19 and run LOFT
+appended: pilot 21 and run CA
+appended: pilot 21 and run DA
+appended: pilot 21 and run SS
+appended: pilot 21 and run LOFT
+appended: pilot 22 and run CA
+appended: pilot 22 and run DA
+appended: pilot 22 and run SS
+appended: pilot 22 and run LOFT
+appended: pilot 23 and run CA
+appended: pilot 23 and run DA
+appended: pilot 23 and run SS
+appended: pilot 23 and run LOFT
+appended: pilot 24 and run CA
+appended: pilot 24 and run DA
+appended: pilot 24 and run SS
+appended: pilot 24 and run LOFT
+appended: pilot 25 and run CA
+appended: pilot 25 and run DA
+appended: pilot 25 and run SS
+appended: pilot 25 and run LOFT
+appended: pilot 26 and run CA
+appended: pilot 26 and run DA
+appended: pilot 26 and run SS
+appended: pilot 26 and run LOFT
+-------Master df created-------
+-------Data Split-------
+-------Label encoded output-------
+-------Performing model fitting + cross validation-------
+Average Accuracy: 0.7199
+Standard Deviation: 0.0416
+[0.67293233 0.70463079 0.75127943 0.75409836 0.70946822 0.60959792
+ 0.7394636  0.77464789 0.7016129  0.75663206 0.73548387 0.67891156
+ 0.71972789 0.77034121 0.69291339 0.76478318 0.70131579]

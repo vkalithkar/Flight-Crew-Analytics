@@ -7,7 +7,6 @@ import pandas as pd
 
 # Path Setup
 data_dir = "./data/feature_extracted"
-# data_dir = "./data/raw"     # for validating the loop
 pilots = [5,6,9,10,11,12,13,14,17,18,19,21,22,23,24,25,26]
 runs = ["CA", "DA", "SS","LOFT"]
 
@@ -15,13 +14,12 @@ all_dfs = []
 for p in pilots:
     for r in runs:
         file_path = f"{data_dir}/{p}/{p}_{r}_features.csv"
-        # file_path = f"{data_dir}/{p}/{p}_{r}.csv"   # for validating the loop
 
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
 
-            df['pilot_id'] = p
-            df['run_type'] = r
+            df['subject_id'] = p
+            df['file_type'] = r
 
             all_dfs.append(df)
             print(f'appended: pilot {p} and run {r}')
@@ -57,6 +55,4 @@ scores = cross_val_score(bst, X, y_encoded, cv=logo, scoring='accuracy', groups=
 
 print(f"Average Accuracy: {scores.mean():.4f}")
 print(f"Standard Deviation: {scores.std():.4f}")
-print(f"Original labels: {y}")
-print(f"Encoded labels:  {y_encoded}")
 print(scores)
