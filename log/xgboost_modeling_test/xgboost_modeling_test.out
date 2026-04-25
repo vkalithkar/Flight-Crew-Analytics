@@ -67,11 +67,10 @@ appended: pilot 26 and run DA
 appended: pilot 26 and run SS
 appended: pilot 26 and run LOFT
 -------Master df created-------
--------Data Split-------
--------Label encoded output-------
 -------Performing model fitting + cross validation-------
 Average Accuracy: 0.7199
 Standard Deviation: 0.0416
 [0.67293233 0.70463079 0.75127943 0.75409836 0.70946822 0.60959792
  0.7394636  0.77464789 0.7016129  0.75663206 0.73548387 0.67891156
  0.71972789 0.77034121 0.69291339 0.76478318 0.70131579]
+All done!

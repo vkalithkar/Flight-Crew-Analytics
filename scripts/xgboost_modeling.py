@@ -29,18 +29,13 @@ del all_dfs
 print("-------Master df created-------")
 
 # Data
-# X = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
-# y = np.array([1, 2, 1, 2])
-# groups = np.array([1, 1, 2, 2])
 X = master_df.drop(columns=['subject_id', 'file_type', 'window_id', 'label'])
 y = master_df['label']
 groups = master_df['subject_id']
-print("-------Data Split-------")
 
 # Label encoding
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
-print("-------Label encoded output-------")
 
 # Create XGBoost classifier model instance
 num_unique_states = len(np.unique(y_encoded))
@@ -56,3 +51,4 @@ scores = cross_val_score(bst, X, y_encoded, cv=logo, scoring='accuracy', groups=
 print(f"Average Accuracy: {scores.mean():.4f}")
 print(f"Standard Deviation: {scores.std():.4f}")
 print(scores)
+print("All done!")
