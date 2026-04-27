@@ -24,8 +24,8 @@ auto_bad_dict = {f"{p}_{run}": [] for p in pilots for run in runs}
 # Preprocess all 68 files
 for pilot in pilots: 
     # Create the directory for this pilot if it doesn't exist
-    output_dir = f'data/eeg_preprocess/raw_filtered_eeg_plots/{pilot}'
-    os.makedirs(output_dir, exist_ok=True)
+    #output_dir = f'data/eeg_preprocess/raw_filtered_eeg_plots/{pilot}'
+    #os.makedirs(output_dir, exist_ok=True)
 
     for run in runs:
         # Data read
