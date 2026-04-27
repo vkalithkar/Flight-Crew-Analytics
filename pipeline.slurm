@@ -11,6 +11,10 @@
 
 set -euo pipefail
 
+module load miniforge3
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate flight2
+
 # Downloads the data
 ./01_download_data.sh
 
@@ -18,10 +22,6 @@ set -euo pipefail
 python ./02_combined_data.py
 
 # Preprocessing all of the data besides EEG
-module load miniforge3
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate flight2
-
 python ./scripts/ecg_gsr_resp/00_preprocess.py
 
 # python ./scripts/eeg/00_get_bad_channels.py
