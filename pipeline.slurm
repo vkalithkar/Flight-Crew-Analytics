@@ -19,7 +19,7 @@ conda activate flight2
 ./01_download_data.sh
 
 # Makes a combined version of all the data if needed for further analysis
-python ./02_combined_data.py
+# python ./02_combined_data.py
 
 # Preprocessing all of the data besides EEG
 python ./scripts/ecg_gsr_resp/00_preprocess.py
