@@ -16,7 +16,7 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate flight2
 
 # Downloads the data
-./01_download_data.sh
+./scripts/01_download_data.sh
 
 # Makes a combined version of all the data if needed for further analysis
 # python ./02_combined_data.py

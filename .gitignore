@@ -224,11 +224,13 @@ katy/plots/
 data/eeg_preprocess/epoched_data
 data/eeg_preprocess/ica_data
 data/eeg_preprocess/interpolated_data
+data/eeg_preprocess/pyprep_results.json
 
 log/feature_engineering/
 log/preprocessing_ecg_gsr_resp/
 log/preprocessing_eeg/*.err
 log/preprocessing_eeg/*.out
+log/pipeline/
 
 output/*.csv
 data/feature_extracted/
