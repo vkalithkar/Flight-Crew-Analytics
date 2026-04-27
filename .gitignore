@@ -227,8 +227,8 @@ data/eeg_preprocess/interpolated_data
 
 log/feature_engineering/
 log/preprocessing_ecg_gsr_resp/
-log/preprocessing_eeg/eeg_preprocess.err
-log/preprocessing_eeg/eeg_preprocess.out
+log/preprocessing_eeg/*.err
+log/preprocessing_eeg/*.out
 
 output/*.csv
 data/feature_extracted/
