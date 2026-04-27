@@ -24,10 +24,8 @@ python ./02_combined_data.py
 # Preprocessing all of the data besides EEG
 python ./scripts/ecg_gsr_resp/00_preprocess.py
 
-# python ./scripts/eeg/00_get_bad_channels.py
-# you can use the above line to look through the bad channels
-
 # These scripts are for preprocessing EEG
+python ./scripts/eeg/00_get_bad_channels.py
 python ./scripts/eeg/01_interpolate_filter_reref.py
 python ./scripts/eeg/02_ica.py
 python ./scripts/eeg/03_epoching.py
