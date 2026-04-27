@@ -32,7 +32,7 @@ python ./scripts/eeg/03_epoching.py
 
 # Feature engineering script to prepare data for xgboost
 
-python ./scripts/feature_engineering.py
+python ./scripts/03_feature_engineering.py
 
 # XGBoost model
-python ./scripts/xgboost_modeling.py
+python ./scripts/04_xgboost_modeling.py
