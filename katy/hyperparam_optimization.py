@@ -1,5 +1,5 @@
 from xgboost import XGBClassifier 
-from sklearn.model_selection import LeaveOneGroupOut, cross_val_score, RandomizedSearchCV
+from sklearn.model_selection import LeaveOneGroupOut, GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import os
@@ -14,19 +14,16 @@ all_dfs = []
 for p in pilots:
     for r in runs:
         file_path = f"{data_dir}/{p}/{p}_{r}_features.csv"
-
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
-
             df['subject_id'] = p
             df['file_type'] = r
-
             all_dfs.append(df)
-            print(f'appended: pilot {p} and run {r}')
+            print(f'appended: pilot {p} and run {r}', flush=True)
 
 master_df = pd.concat(all_dfs, ignore_index=True)
 del all_dfs
-print("-------Master df created-------")
+print("-------Master df created-------", flush=True)
 
 # Data
 X = master_df.drop(columns=['subject_id', 'file_type', 'window_id', 'label'])
@@ -37,40 +34,51 @@ groups = master_df['subject_id']
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 
-# set hyperparams for randomsearch CV
+# Hyperparam grid (~648 combos × 17 folds ≈ 1-1.5 hours)
 num_unique_states = len(np.unique(y_encoded))
 param_grid = {
-    'n_estimators': [100, 150, 200, 250],
-    'max_depth': [2, 3, 4],
-    'learning_rate': [0.01, 0.03, 0.05, 0.07],
-    'subsample': [0.6, 0.7, 0.8],
-    'colsample_bytree': [0.7, 0.8, 0.9],
+    'n_estimators': [200, 250, 300],
+    'max_depth': [2, 3],
+    'learning_rate': [0.05, 0.07, 0.1],
+    'subsample': [0.6, 0.7],
+    'colsample_bytree': [0.6, 0.7, 0.8],
     'min_child_weight': [8, 10, 15],
+    'gamma': [0, 0.1],
 }
 
-# Create XGBoost classifier model instance
-bst = XGBClassifier(n_estimators=100, max_depth=2, learning_rate=1, objective='multi:softmax', num_class=num_unique_states)
+total_combos = np.prod([len(v) for v in param_grid.values()])
+print(f"Total combinations: {total_combos}", flush=True)
+print(f"Total fits: {total_combos * len(np.unique(groups))}", flush=True)
 
-# Setup Leave-One-Group-Out Cross-Validation
+# Base model
+bst = XGBClassifier(
+    objective='multi:softmax',
+    num_class=num_unique_states,
+    eval_metric='mlogloss',
+    use_label_encoder=False
+)
+
+# Setup LOGO-CV
 logo = LeaveOneGroupOut()
 
-# perform optimal hyperparameter search
-search = RandomizedSearchCV(
-    bst, param_grid, n_iter=50, cv=logo,
-    scoring='accuracy', n_jobs=-1, verbose=1, 
-    random_state=42, return_train_score=True  
+# Grid Search
+print("-------Starting grid search-------", flush=True)
+search = GridSearchCV(
+    bst, param_grid, cv=logo,
+    scoring='f1_weighted', n_jobs=-1, verbose=3,
+    return_train_score=True
 )
 search.fit(X, y_encoded, groups=groups)
 
+# Save results
 results_df = pd.DataFrame(search.cv_results_)
 results_df = results_df.sort_values('mean_test_score', ascending=False)
 
-# Keep only useful columns
 cols = ['mean_test_score', 'std_test_score', 'mean_train_score'] + \
        [c for c in results_df.columns if c.startswith('param_')]
 results_df[cols].to_csv("./katy/hyperparam_search_results.csv", index=False)
-print('--- Random Hyperparam Search Completed! ---')
+print('--- Grid Search Completed! ---', flush=True)
 
-print(f"\nBest Params: {search.best_params_}")
-print(f"Best CV Accuracy: {search.best_score_:.4f}")
-print("All done!")
+print(f"\nBest Params: {search.best_params_}", flush=True)
+print(f"Best CV Weighted F1: {search.best_score_:.4f}", flush=True)
+print("All done!", flush=True)
