@@ -224,7 +224,7 @@ katy/plots/
 data/eeg_preprocess/epoched_data
 data/eeg_preprocess/ica_data
 data/eeg_preprocess/interpolated_data
-data/eeg_preprocess/pyprep_results.json
+data/eeg_preprocess/
 
 log/feature_engineering/
 log/preprocessing_ecg_gsr_resp/
