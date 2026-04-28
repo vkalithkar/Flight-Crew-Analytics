@@ -220,6 +220,5 @@ data/eeg_preprocess/
 
 
 log/pipeline/
-log/hyperparams
 
 data/feature_extracted/
