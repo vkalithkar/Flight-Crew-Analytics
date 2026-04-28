@@ -1,0 +1,394 @@
+2026-04-21 16:18:30,190  INFO      ============================================================
+2026-04-21 16:18:30,191  INFO      Flight Crew Analytics – physiological preprocessing
+2026-04-21 16:18:30,191  INFO      RAW_DIR : /sciclone/scr10/gzdata440/kdlenshin/Flight-Crew-Analytics/data/raw
+2026-04-21 16:18:30,191  INFO      OUT_DIR : /sciclone/scr10/gzdata440/kdlenshin/Flight-Crew-Analytics/data/ecg_gsr_resp_preprocess
+2026-04-21 16:18:30,192  INFO      ============================================================
+2026-04-21 16:18:30,207  INFO      Found 17 subject folders: ['5', '6', '9', '10', '11', '12', '13', '14', '17', '18', '19', '21', '22', '23', '24', '25', '26']
+2026-04-21 16:18:30,207  INFO      
+2026-04-21 16:18:30,207  INFO      ── Subject 5 ──────────────────────────────────
+2026-04-21 16:18:30,208  INFO        Loading  5_CA.csv
+2026-04-21 16:18:31,143  INFO        ECG      cleaned
+2026-04-21 16:18:31,235  INFO      ECG validation – subject 5: 564 R-peaks detected (94.0 bpm)
+2026-04-21 16:18:31,402  INFO        RSP      cleaned
+2026-04-21 16:18:31,413  INFO        GSR      cleaned
+2026-04-21 16:18:33,239  INFO        Written  → data/ecg_gsr_resp_preprocess/5_CA_clean.csv
+2026-04-21 16:18:33,240  INFO        Loading  5_DA.csv
+2026-04-21 16:18:33,738  INFO        ECG      cleaned
+2026-04-21 16:18:33,738  WARNING   SANITY – subject 5 / DA / ECG: zero-variance signal.
+2026-04-21 16:18:33,747  INFO        RSP      cleaned
+2026-04-21 16:18:33,752  INFO        GSR      cleaned
+2026-04-21 16:18:35,238  INFO        Written  → data/ecg_gsr_resp_preprocess/5_DA_clean.csv
+2026-04-21 16:18:35,238  INFO        Loading  5_LOFT.csv
+2026-04-21 16:18:40,232  INFO        ECG      cleaned
+2026-04-21 16:18:40,320  INFO        RSP      cleaned
+2026-04-21 16:18:40,452  INFO        GSR      cleaned
+2026-04-21 16:18:56,466  INFO        Written  → data/ecg_gsr_resp_preprocess/5_LOFT_clean.csv
+2026-04-21 16:18:56,467  INFO        Loading  5_SS.csv
+2026-04-21 16:18:57,064  INFO        ECG      cleaned
+2026-04-21 16:18:57,069  INFO        RSP      cleaned
+2026-04-21 16:18:57,072  INFO        GSR      cleaned
+2026-04-21 16:18:57,735  INFO        Written  → data/ecg_gsr_resp_preprocess/5_SS_clean.csv
+2026-04-21 16:18:57,736  INFO      
+2026-04-21 16:18:57,736  INFO      ── Subject 6 ──────────────────────────────────
+2026-04-21 16:18:57,736  INFO        Loading  6_CA.csv
+2026-04-21 16:18:58,156  INFO        ECG      cleaned
+2026-04-21 16:18:58,165  INFO        RSP      cleaned
+2026-04-21 16:18:58,168  INFO        GSR      cleaned
+2026-04-21 16:18:59,451  INFO        Written  → data/ecg_gsr_resp_preprocess/6_CA_clean.csv
+2026-04-21 16:18:59,451  INFO        Loading  6_DA.csv
+2026-04-21 16:19:00,015  INFO        ECG      cleaned
+2026-04-21 16:19:00,023  INFO        RSP      cleaned
+2026-04-21 16:19:00,027  INFO        GSR      cleaned
+2026-04-21 16:19:01,326  INFO        Written  → data/ecg_gsr_resp_preprocess/6_DA_clean.csv
+2026-04-21 16:19:01,327  INFO        Loading  6_LOFT.csv
+2026-04-21 16:19:04,299  INFO        ECG      cleaned
+2026-04-21 16:19:04,376  INFO        RSP      cleaned
+2026-04-21 16:19:04,777  INFO        GSR      cleaned
+2026-04-21 16:19:19,910  INFO        Written  → data/ecg_gsr_resp_preprocess/6_LOFT_clean.csv
+2026-04-21 16:19:19,912  INFO        Loading  6_SS.csv
+2026-04-21 16:19:20,267  INFO        ECG      cleaned
+2026-04-21 16:19:20,272  INFO        RSP      cleaned
+2026-04-21 16:19:20,274  INFO        GSR      cleaned
+2026-04-21 16:19:20,876  INFO        Written  → data/ecg_gsr_resp_preprocess/6_SS_clean.csv
+2026-04-21 16:19:20,876  INFO      
+2026-04-21 16:19:20,876  INFO      ── Subject 9 ──────────────────────────────────
+2026-04-21 16:19:20,876  INFO        Loading  9_CA.csv
+2026-04-21 16:19:21,379  INFO        ECG      cleaned
+2026-04-21 16:19:21,387  INFO        RSP      cleaned
+2026-04-21 16:19:21,390  INFO        GSR      cleaned
+2026-04-21 16:19:22,667  INFO        Written  → data/ecg_gsr_resp_preprocess/9_CA_clean.csv
+2026-04-21 16:19:22,667  INFO        Loading  9_DA.csv
+2026-04-21 16:19:23,025  INFO        ECG      cleaned
+2026-04-21 16:19:23,033  INFO        RSP      cleaned
+2026-04-21 16:19:23,037  INFO        GSR      cleaned
+2026-04-21 16:19:24,309  INFO        Written  → data/ecg_gsr_resp_preprocess/9_DA_clean.csv
+2026-04-21 16:19:24,310  INFO        Loading  9_LOFT.csv
+2026-04-21 16:19:28,437  INFO        ECG      cleaned
+2026-04-21 16:19:28,534  INFO        RSP      cleaned
+2026-04-21 16:19:28,574  INFO        GSR      cleaned
+2026-04-21 16:19:46,640  INFO        Written  → data/ecg_gsr_resp_preprocess/9_LOFT_clean.csv
+2026-04-21 16:19:46,641  INFO        Loading  9_SS.csv
+2026-04-21 16:19:47,389  INFO        ECG      cleaned
+2026-04-21 16:19:47,399  INFO        RSP      cleaned
+2026-04-21 16:19:47,403  INFO        GSR      cleaned
+2026-04-21 16:19:49,050  INFO        Written  → data/ecg_gsr_resp_preprocess/9_SS_clean.csv
+2026-04-21 16:19:49,050  INFO      
+2026-04-21 16:19:49,050  INFO      ── Subject 10 ──────────────────────────────────
+2026-04-21 16:19:49,050  INFO        Loading  10_CA.csv
+2026-04-21 16:19:49,670  INFO        ECG      cleaned
+2026-04-21 16:19:49,679  INFO        RSP      cleaned
+2026-04-21 16:19:49,694  INFO        GSR      cleaned
+2026-04-21 16:19:51,397  INFO        Written  → data/ecg_gsr_resp_preprocess/10_CA_clean.csv
+2026-04-21 16:19:51,398  INFO        Loading  10_DA.csv
+2026-04-21 16:19:51,868  INFO        ECG      cleaned
+2026-04-21 16:19:51,877  INFO        RSP      cleaned
+2026-04-21 16:19:51,882  INFO        GSR      cleaned
+2026-04-21 16:19:51,882  WARNING   SANITY – subject 10 / DA / GSR: zero-variance signal.
+2026-04-21 16:19:53,463  INFO        Written  → data/ecg_gsr_resp_preprocess/10_DA_clean.csv
+2026-04-21 16:19:53,463  INFO        Loading  10_LOFT.csv
+2026-04-21 16:19:57,997  INFO        ECG      cleaned
+2026-04-21 16:19:58,095  INFO        RSP      cleaned
+2026-04-21 16:19:58,137  INFO        GSR      cleaned
+2026-04-21 16:20:15,821  INFO        Written  → data/ecg_gsr_resp_preprocess/10_LOFT_clean.csv
+2026-04-21 16:20:15,823  INFO        Loading  10_SS.csv
+2026-04-21 16:20:16,625  INFO        ECG      cleaned
+2026-04-21 16:20:16,633  INFO        RSP      cleaned
+2026-04-21 16:20:16,651  INFO        GSR      cleaned
+2026-04-21 16:20:18,026  INFO        Written  → data/ecg_gsr_resp_preprocess/10_SS_clean.csv
+2026-04-21 16:20:18,026  INFO      
+2026-04-21 16:20:18,026  INFO      ── Subject 11 ──────────────────────────────────
+2026-04-21 16:20:18,027  INFO        Loading  11_CA.csv
+2026-04-21 16:20:18,583  INFO        ECG      cleaned
+2026-04-21 16:20:18,591  INFO        RSP      cleaned
+2026-04-21 16:20:18,594  INFO        GSR      cleaned
+2026-04-21 16:20:19,907  INFO        Written  → data/ecg_gsr_resp_preprocess/11_CA_clean.csv
+2026-04-21 16:20:19,907  INFO        Loading  11_DA.csv
+2026-04-21 16:20:21,707  INFO        ECG      cleaned
+2026-04-21 16:20:21,715  INFO        RSP      cleaned
+2026-04-21 16:20:21,718  INFO        GSR      cleaned
+2026-04-21 16:20:23,031  INFO        Written  → data/ecg_gsr_resp_preprocess/11_DA_clean.csv
+2026-04-21 16:20:23,031  INFO        Loading  11_LOFT.csv
+2026-04-21 16:20:25,855  INFO        ECG      cleaned
+2026-04-21 16:20:25,927  INFO        RSP      cleaned
+2026-04-21 16:20:25,959  INFO        GSR      cleaned
+2026-04-21 16:20:25,963  WARNING   SANITY – subject 11 / LOFT / GSR: zero-variance signal.
+2026-04-21 16:20:39,035  INFO        Written  → data/ecg_gsr_resp_preprocess/11_LOFT_clean.csv
+2026-04-21 16:20:39,036  INFO        Loading  11_SS.csv
+2026-04-21 16:20:39,565  INFO        ECG      cleaned
+2026-04-21 16:20:39,573  INFO        RSP      cleaned
+2026-04-21 16:20:39,577  INFO        GSR      cleaned
+2026-04-21 16:20:40,992  INFO        Written  → data/ecg_gsr_resp_preprocess/11_SS_clean.csv
+2026-04-21 16:20:40,992  INFO      
+2026-04-21 16:20:40,992  INFO      ── Subject 12 ──────────────────────────────────
+2026-04-21 16:20:40,993  INFO        Loading  12_CA.csv
+2026-04-21 16:20:41,931  INFO        ECG      cleaned
+2026-04-21 16:20:41,939  INFO        RSP      cleaned
+2026-04-21 16:20:41,943  INFO        GSR      cleaned
+2026-04-21 16:20:43,302  INFO        Written  → data/ecg_gsr_resp_preprocess/12_CA_clean.csv
+2026-04-21 16:20:43,303  INFO        Loading  12_DA.csv
+2026-04-21 16:20:44,155  INFO        ECG      cleaned
+2026-04-21 16:20:44,163  INFO        RSP      cleaned
+2026-04-21 16:20:44,167  INFO        GSR      cleaned
+2026-04-21 16:20:45,468  INFO        Written  → data/ecg_gsr_resp_preprocess/12_DA_clean.csv
+2026-04-21 16:20:45,469  INFO        Loading  12_LOFT.csv
+2026-04-21 16:20:48,087  INFO        ECG      cleaned
+2026-04-21 16:20:48,157  INFO        RSP      cleaned
+2026-04-21 16:20:48,188  INFO        GSR      cleaned
+2026-04-21 16:21:01,388  INFO        Written  → data/ecg_gsr_resp_preprocess/12_LOFT_clean.csv
+2026-04-21 16:21:01,389  INFO        Loading  12_SS.csv
+2026-04-21 16:21:01,645  INFO        ECG      cleaned
+2026-04-21 16:21:01,653  INFO        RSP      cleaned
+2026-04-21 16:21:01,657  INFO        GSR      cleaned
+2026-04-21 16:21:03,050  INFO        Written  → data/ecg_gsr_resp_preprocess/12_SS_clean.csv
+2026-04-21 16:21:03,050  INFO      
+2026-04-21 16:21:03,050  INFO      ── Subject 13 ──────────────────────────────────
+2026-04-21 16:21:03,051  INFO        Loading  13_CA.csv
+2026-04-21 16:21:03,379  INFO        ECG      cleaned
+2026-04-21 16:21:03,387  INFO        RSP      cleaned
+2026-04-21 16:21:03,391  INFO        GSR      cleaned
+2026-04-21 16:21:04,681  INFO        Written  → data/ecg_gsr_resp_preprocess/13_CA_clean.csv
+2026-04-21 16:21:04,681  INFO        Loading  13_DA.csv
+2026-04-21 16:21:04,946  INFO        ECG      cleaned
+2026-04-21 16:21:04,954  INFO        RSP      cleaned
+2026-04-21 16:21:04,958  INFO        GSR      cleaned
+2026-04-21 16:21:06,226  INFO        Written  → data/ecg_gsr_resp_preprocess/13_DA_clean.csv
+2026-04-21 16:21:06,227  INFO        Loading  13_LOFT.csv
+2026-04-21 16:21:08,709  INFO        ECG      cleaned
+2026-04-21 16:21:08,782  INFO        RSP      cleaned
+2026-04-21 16:21:08,813  INFO        GSR      cleaned
+2026-04-21 16:21:22,742  INFO        Written  → data/ecg_gsr_resp_preprocess/13_LOFT_clean.csv
+2026-04-21 16:21:22,743  INFO        Loading  13_SS.csv
+2026-04-21 16:21:23,264  INFO        ECG      cleaned
+2026-04-21 16:21:23,271  INFO        RSP      cleaned
+2026-04-21 16:21:23,275  INFO        GSR      cleaned
+2026-04-21 16:21:24,971  INFO        Written  → data/ecg_gsr_resp_preprocess/13_SS_clean.csv
+2026-04-21 16:21:24,971  INFO      
+2026-04-21 16:21:24,971  INFO      ── Subject 14 ──────────────────────────────────
+2026-04-21 16:21:24,972  INFO        Loading  14_CA.csv
+2026-04-21 16:21:25,225  INFO        ECG      cleaned
+2026-04-21 16:21:25,233  INFO        RSP      cleaned
+2026-04-21 16:21:25,236  INFO        GSR      cleaned
+2026-04-21 16:21:26,548  INFO        Written  → data/ecg_gsr_resp_preprocess/14_CA_clean.csv
+2026-04-21 16:21:26,549  INFO        Loading  14_DA.csv
+2026-04-21 16:21:26,801  INFO        ECG      cleaned
+2026-04-21 16:21:26,809  INFO        RSP      cleaned
+2026-04-21 16:21:26,813  INFO        GSR      cleaned
+2026-04-21 16:21:28,109  INFO        Written  → data/ecg_gsr_resp_preprocess/14_DA_clean.csv
+2026-04-21 16:21:28,109  INFO        Loading  14_LOFT.csv
+2026-04-21 16:21:30,545  INFO        ECG      cleaned
+2026-04-21 16:21:30,615  INFO        RSP      cleaned
+2026-04-21 16:21:30,647  INFO        GSR      cleaned
+2026-04-21 16:21:44,009  INFO        Written  → data/ecg_gsr_resp_preprocess/14_LOFT_clean.csv
+2026-04-21 16:21:44,010  INFO        Loading  14_SS.csv
+2026-04-21 16:21:44,282  INFO        ECG      cleaned
+2026-04-21 16:21:44,290  INFO        RSP      cleaned
+2026-04-21 16:21:44,294  INFO        GSR      cleaned
+2026-04-21 16:21:46,239  INFO        Written  → data/ecg_gsr_resp_preprocess/14_SS_clean.csv
+2026-04-21 16:21:46,240  INFO      
+2026-04-21 16:21:46,240  INFO      ── Subject 17 ──────────────────────────────────
+2026-04-21 16:21:46,240  INFO        Loading  17_CA.csv
+2026-04-21 16:21:46,533  INFO        ECG      cleaned
+2026-04-21 16:21:46,540  INFO        RSP      cleaned
+2026-04-21 16:21:46,544  INFO        GSR      cleaned
+2026-04-21 16:21:47,856  INFO        Written  → data/ecg_gsr_resp_preprocess/17_CA_clean.csv
+2026-04-21 16:21:47,857  INFO        Loading  17_DA.csv
+2026-04-21 16:21:48,127  INFO        ECG      cleaned
+2026-04-21 16:21:48,136  INFO        RSP      cleaned
+2026-04-21 16:21:48,140  INFO        GSR      cleaned
+2026-04-21 16:21:49,548  INFO        Written  → data/ecg_gsr_resp_preprocess/17_DA_clean.csv
+2026-04-21 16:21:49,549  INFO        Loading  17_LOFT.csv
+2026-04-21 16:21:52,393  INFO        ECG      cleaned
+2026-04-21 16:21:52,476  INFO        RSP      cleaned
+2026-04-21 16:21:52,548  INFO        GSR      cleaned
+2026-04-21 16:22:07,935  INFO        Written  → data/ecg_gsr_resp_preprocess/17_LOFT_clean.csv
+2026-04-21 16:22:07,936  INFO        Loading  17_SS.csv
+2026-04-21 16:22:08,369  INFO        ECG      cleaned
+2026-04-21 16:22:08,377  INFO        RSP      cleaned
+2026-04-21 16:22:08,380  INFO        GSR      cleaned
+2026-04-21 16:22:09,873  INFO        Written  → data/ecg_gsr_resp_preprocess/17_SS_clean.csv
+2026-04-21 16:22:09,873  INFO      
+2026-04-21 16:22:09,873  INFO      ── Subject 18 ──────────────────────────────────
+2026-04-21 16:22:09,874  INFO        Loading  18_CA.csv
+2026-04-21 16:22:10,266  INFO        ECG      cleaned
+2026-04-21 16:22:10,274  INFO        RSP      cleaned
+2026-04-21 16:22:10,277  INFO        GSR      cleaned
+2026-04-21 16:22:11,599  INFO        Written  → data/ecg_gsr_resp_preprocess/18_CA_clean.csv
+2026-04-21 16:22:11,599  INFO        Loading  18_DA.csv
+2026-04-21 16:22:11,856  INFO        ECG      cleaned
+2026-04-21 16:22:11,864  INFO        RSP      cleaned
+2026-04-21 16:22:11,867  INFO        GSR      cleaned
+2026-04-21 16:22:11,868  WARNING   SANITY – subject 18 / DA / GSR: zero-variance signal.
+2026-04-21 16:22:13,368  INFO        Written  → data/ecg_gsr_resp_preprocess/18_DA_clean.csv
+2026-04-21 16:22:13,368  INFO        Loading  18_LOFT.csv
+2026-04-21 16:22:16,167  INFO        ECG      cleaned
+2026-04-21 16:22:16,253  INFO        RSP      cleaned
+2026-04-21 16:22:16,290  INFO        GSR      cleaned
+2026-04-21 16:22:32,673  INFO        Written  → data/ecg_gsr_resp_preprocess/18_LOFT_clean.csv
+2026-04-21 16:22:32,673  INFO        Loading  18_SS.csv
+2026-04-21 16:22:32,943  INFO        ECG      cleaned
+2026-04-21 16:22:32,951  INFO        RSP      cleaned
+2026-04-21 16:22:32,952  WARNING   SANITY – subject 18 / SS / R: 1.0% of samples exceed 5 SD
+2026-04-21 16:22:32,955  INFO        GSR      cleaned
+2026-04-21 16:22:34,378  INFO        Written  → data/ecg_gsr_resp_preprocess/18_SS_clean.csv
+2026-04-21 16:22:34,378  INFO      
+2026-04-21 16:22:34,378  INFO      ── Subject 19 ──────────────────────────────────
+2026-04-21 16:22:34,379  INFO        Loading  19_CA.csv
+2026-04-21 16:22:34,699  INFO        ECG      cleaned
+2026-04-21 16:22:34,706  INFO        RSP      cleaned
+2026-04-21 16:22:34,710  INFO        GSR      cleaned
+2026-04-21 16:22:35,983  INFO        Written  → data/ecg_gsr_resp_preprocess/19_CA_clean.csv
+2026-04-21 16:22:35,984  INFO        Loading  19_DA.csv
+2026-04-21 16:22:36,233  INFO        ECG      cleaned
+2026-04-21 16:22:36,241  INFO        RSP      cleaned
+2026-04-21 16:22:36,245  INFO        GSR      cleaned
+2026-04-21 16:22:38,224  INFO        Written  → data/ecg_gsr_resp_preprocess/19_DA_clean.csv
+2026-04-21 16:22:38,224  INFO        Loading  19_LOFT.csv
+2026-04-21 16:22:40,638  INFO        ECG      cleaned
+2026-04-21 16:22:40,708  INFO        RSP      cleaned
+2026-04-21 16:22:40,740  INFO        GSR      cleaned
+2026-04-21 16:22:54,718  INFO        Written  → data/ecg_gsr_resp_preprocess/19_LOFT_clean.csv
+2026-04-21 16:22:54,719  INFO        Loading  19_SS.csv
+2026-04-21 16:22:54,999  INFO        ECG      cleaned
+2026-04-21 16:22:55,007  INFO        RSP      cleaned
+2026-04-21 16:22:55,011  INFO        GSR      cleaned
+2026-04-21 16:22:56,318  INFO        Written  → data/ecg_gsr_resp_preprocess/19_SS_clean.csv
+2026-04-21 16:22:56,318  INFO      
+2026-04-21 16:22:56,318  INFO      ── Subject 21 ──────────────────────────────────
+2026-04-21 16:22:56,319  INFO        Loading  21_CA.csv
+2026-04-21 16:22:56,614  INFO        ECG      cleaned
+2026-04-21 16:22:56,621  INFO        RSP      cleaned
+2026-04-21 16:22:56,625  INFO        GSR      cleaned
+2026-04-21 16:22:56,626  WARNING   SANITY – subject 21 / CA / GSR: zero-variance signal.
+2026-04-21 16:22:58,117  INFO        Written  → data/ecg_gsr_resp_preprocess/21_CA_clean.csv
+2026-04-21 16:22:58,118  INFO        Loading  21_DA.csv
+2026-04-21 16:22:58,379  INFO        ECG      cleaned
+2026-04-21 16:22:58,387  INFO        RSP      cleaned
+2026-04-21 16:22:58,391  INFO        GSR      cleaned
+2026-04-21 16:22:58,391  WARNING   SANITY – subject 21 / DA / GSR: zero-variance signal.
+2026-04-21 16:23:00,054  INFO        Written  → data/ecg_gsr_resp_preprocess/21_DA_clean.csv
+2026-04-21 16:23:00,055  INFO        Loading  21_LOFT.csv
+2026-04-21 16:23:02,240  INFO        ECG      cleaned
+2026-04-21 16:23:02,307  INFO        RSP      cleaned
+2026-04-21 16:23:02,337  INFO        GSR      cleaned
+2026-04-21 16:23:02,341  WARNING   SANITY – subject 21 / LOFT / GSR: zero-variance signal.
+2026-04-21 16:23:14,244  INFO        Written  → data/ecg_gsr_resp_preprocess/21_LOFT_clean.csv
+2026-04-21 16:23:14,245  INFO        Loading  21_SS.csv
+2026-04-21 16:23:14,626  INFO        ECG      cleaned
+2026-04-21 16:23:14,634  INFO        RSP      cleaned
+2026-04-21 16:23:14,638  INFO        GSR      cleaned
+2026-04-21 16:23:15,933  INFO        Written  → data/ecg_gsr_resp_preprocess/21_SS_clean.csv
+2026-04-21 16:23:15,933  INFO      
+2026-04-21 16:23:15,933  INFO      ── Subject 22 ──────────────────────────────────
+2026-04-21 16:23:15,933  INFO        Loading  22_CA.csv
+2026-04-21 16:23:16,236  INFO        ECG      cleaned
+2026-04-21 16:23:16,244  INFO        RSP      cleaned
+2026-04-21 16:23:16,248  INFO        GSR      cleaned
+2026-04-21 16:23:17,559  INFO        Written  → data/ecg_gsr_resp_preprocess/22_CA_clean.csv
+2026-04-21 16:23:17,560  INFO        Loading  22_DA.csv
+2026-04-21 16:23:17,818  INFO        ECG      cleaned
+2026-04-21 16:23:17,826  INFO        RSP      cleaned
+2026-04-21 16:23:17,830  INFO        GSR      cleaned
+2026-04-21 16:23:19,121  INFO        Written  → data/ecg_gsr_resp_preprocess/22_DA_clean.csv
+2026-04-21 16:23:19,122  INFO        Loading  22_LOFT.csv
+2026-04-21 16:23:21,957  INFO        ECG      cleaned
+2026-04-21 16:23:22,022  INFO        RSP      cleaned
+2026-04-21 16:23:22,051  INFO        GSR      cleaned
+2026-04-21 16:23:34,704  INFO        Written  → data/ecg_gsr_resp_preprocess/22_LOFT_clean.csv
+2026-04-21 16:23:34,705  INFO        Loading  22_SS.csv
+2026-04-21 16:23:34,992  INFO        ECG      cleaned
+2026-04-21 16:23:35,000  INFO        RSP      cleaned
+2026-04-21 16:23:35,004  INFO        GSR      cleaned
+2026-04-21 16:23:36,336  INFO        Written  → data/ecg_gsr_resp_preprocess/22_SS_clean.csv
+2026-04-21 16:23:36,336  INFO      
+2026-04-21 16:23:36,336  INFO      ── Subject 23 ──────────────────────────────────
+2026-04-21 16:23:36,337  INFO        Loading  23_CA.csv
+2026-04-21 16:23:36,683  INFO        ECG      cleaned
+2026-04-21 16:23:36,693  INFO        RSP      cleaned
+2026-04-21 16:23:36,697  INFO        GSR      cleaned
+2026-04-21 16:23:38,329  INFO        Written  → data/ecg_gsr_resp_preprocess/23_CA_clean.csv
+2026-04-21 16:23:38,329  INFO        Loading  23_DA.csv
+2026-04-21 16:23:38,630  INFO        ECG      cleaned
+2026-04-21 16:23:38,639  INFO        RSP      cleaned
+2026-04-21 16:23:38,644  INFO        GSR      cleaned
+2026-04-21 16:23:40,258  INFO        Written  → data/ecg_gsr_resp_preprocess/23_DA_clean.csv
+2026-04-21 16:23:40,258  INFO        Loading  23_LOFT.csv
+2026-04-21 16:23:42,618  INFO        ECG      cleaned
+2026-04-21 16:23:42,688  INFO        RSP      cleaned
+2026-04-21 16:23:42,720  INFO        GSR      cleaned
+2026-04-21 16:23:55,631  INFO        Written  → data/ecg_gsr_resp_preprocess/23_LOFT_clean.csv
+2026-04-21 16:23:55,632  INFO        Loading  23_SS.csv
+2026-04-21 16:23:55,892  INFO        ECG      cleaned
+2026-04-21 16:23:55,899  INFO        RSP      cleaned
+2026-04-21 16:23:55,903  INFO        GSR      cleaned
+2026-04-21 16:23:57,195  INFO        Written  → data/ecg_gsr_resp_preprocess/23_SS_clean.csv
+2026-04-21 16:23:57,195  INFO      
+2026-04-21 16:23:57,195  INFO      ── Subject 24 ──────────────────────────────────
+2026-04-21 16:23:57,196  INFO        Loading  24_CA.csv
+2026-04-21 16:23:57,466  INFO        ECG      cleaned
+2026-04-21 16:23:57,474  INFO        RSP      cleaned
+2026-04-21 16:23:57,475  WARNING   SANITY – subject 24 / CA / R: 1.1% of samples exceed 5 SD
+2026-04-21 16:23:57,478  INFO        GSR      cleaned
+2026-04-21 16:23:58,761  INFO        Written  → data/ecg_gsr_resp_preprocess/24_CA_clean.csv
+2026-04-21 16:23:58,762  INFO        Loading  24_DA.csv
+2026-04-21 16:23:59,016  INFO        ECG      cleaned
+2026-04-21 16:23:59,024  INFO        RSP      cleaned
+2026-04-21 16:23:59,027  INFO        GSR      cleaned
+2026-04-21 16:24:00,307  INFO        Written  → data/ecg_gsr_resp_preprocess/24_DA_clean.csv
+2026-04-21 16:24:00,307  INFO        Loading  24_LOFT.csv
+2026-04-21 16:24:02,840  INFO        ECG      cleaned
+2026-04-21 16:24:02,911  INFO        RSP      cleaned
+2026-04-21 16:24:02,942  INFO        GSR      cleaned
+2026-04-21 16:24:15,978  INFO        Written  → data/ecg_gsr_resp_preprocess/24_LOFT_clean.csv
+2026-04-21 16:24:15,979  INFO        Loading  24_SS.csv
+2026-04-21 16:24:16,243  INFO        ECG      cleaned
+2026-04-21 16:24:16,251  INFO        RSP      cleaned
+2026-04-21 16:24:16,255  INFO        GSR      cleaned
+2026-04-21 16:24:17,729  INFO        Written  → data/ecg_gsr_resp_preprocess/24_SS_clean.csv
+2026-04-21 16:24:17,729  INFO      
+2026-04-21 16:24:17,730  INFO      ── Subject 25 ──────────────────────────────────
+2026-04-21 16:24:17,730  INFO        Loading  25_CA.csv
+2026-04-21 16:24:18,008  INFO        ECG      cleaned
+2026-04-21 16:24:18,016  INFO        RSP      cleaned
+2026-04-21 16:24:18,020  INFO        GSR      cleaned
+2026-04-21 16:24:19,298  INFO        Written  → data/ecg_gsr_resp_preprocess/25_CA_clean.csv
+2026-04-21 16:24:19,298  INFO        Loading  25_DA.csv
+2026-04-21 16:24:19,555  INFO        ECG      cleaned
+2026-04-21 16:24:19,563  INFO        RSP      cleaned
+2026-04-21 16:24:19,567  INFO        GSR      cleaned
+2026-04-21 16:24:20,857  INFO        Written  → data/ecg_gsr_resp_preprocess/25_DA_clean.csv
+2026-04-21 16:24:20,858  INFO        Loading  25_LOFT.csv
+2026-04-21 16:24:24,034  INFO        ECG      cleaned
+2026-04-21 16:24:24,104  INFO        RSP      cleaned
+2026-04-21 16:24:24,135  INFO        GSR      cleaned
+2026-04-21 16:24:37,221  INFO        Written  → data/ecg_gsr_resp_preprocess/25_LOFT_clean.csv
+2026-04-21 16:24:37,222  INFO        Loading  25_SS.csv
+2026-04-21 16:24:37,510  INFO        ECG      cleaned
+2026-04-21 16:24:37,518  INFO        RSP      cleaned
+2026-04-21 16:24:37,522  INFO        GSR      cleaned
+2026-04-21 16:24:39,234  INFO        Written  → data/ecg_gsr_resp_preprocess/25_SS_clean.csv
+2026-04-21 16:24:39,235  INFO      
+2026-04-21 16:24:39,235  INFO      ── Subject 26 ──────────────────────────────────
+2026-04-21 16:24:39,235  INFO        Loading  26_CA.csv
+2026-04-21 16:24:39,514  INFO        ECG      cleaned
+2026-04-21 16:24:39,522  INFO        RSP      cleaned
+2026-04-21 16:24:39,525  INFO        GSR      cleaned
+2026-04-21 16:24:40,812  INFO        Written  → data/ecg_gsr_resp_preprocess/26_CA_clean.csv
+2026-04-21 16:24:40,812  INFO        Loading  26_DA.csv
+2026-04-21 16:24:41,076  INFO        ECG      cleaned
+2026-04-21 16:24:41,084  INFO        RSP      cleaned
+2026-04-21 16:24:41,088  INFO        GSR      cleaned
+2026-04-21 16:24:42,358  INFO        Written  → data/ecg_gsr_resp_preprocess/26_DA_clean.csv
+2026-04-21 16:24:42,359  INFO        Loading  26_LOFT.csv
+2026-04-21 16:24:46,280  INFO        ECG      cleaned
+2026-04-21 16:24:46,350  INFO        RSP      cleaned
+2026-04-21 16:24:46,381  INFO        GSR      cleaned
+2026-04-21 16:24:59,272  INFO        Written  → data/ecg_gsr_resp_preprocess/26_LOFT_clean.csv
+2026-04-21 16:24:59,273  INFO        Loading  26_SS.csv
+2026-04-21 16:25:00,817  INFO        ECG      cleaned
+2026-04-21 16:25:00,825  INFO        RSP      cleaned
+2026-04-21 16:25:00,829  INFO        GSR      cleaned
+2026-04-21 16:25:02,196  INFO        Written  → data/ecg_gsr_resp_preprocess/26_SS_clean.csv
+2026-04-21 16:25:02,197  INFO      
+2026-04-21 16:25:02,197  INFO      ============================================================
+2026-04-21 16:25:02,197  INFO      Done.  68 files written.
+2026-04-21 16:25:02,198  INFO      ============================================================
