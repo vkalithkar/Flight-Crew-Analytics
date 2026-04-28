@@ -77,9 +77,14 @@ print("autobad dict")
 print(auto_bad_dict)
 
 # Json save the auto_bad_dict 
-output_path = 'data/eeg_preprocess/pyprep_results.json'
 
-with open(output_path, 'w') as f:
+json_output_path = 'data/eeg_preprocess'
+if not os.path.exists(json_output_path):
+    os.makedirs(json_output_path)
+
+json_output_file = 'data/eeg_preprocess/pyprep_results.json'
+
+with open(json_output_file, 'w') as f:
     json.dump(auto_bad_dict, f, indent=4)
 
-print(f"Final results saved to {output_path}")
+print(f"Final results saved to {json_output_file}")
