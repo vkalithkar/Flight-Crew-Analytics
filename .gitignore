@@ -216,4 +216,4 @@ data/feature_extracted/
 log/*.err
 log/*.out
 
-eda/plots/
+eda_plots/
