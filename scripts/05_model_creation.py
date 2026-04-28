@@ -35,7 +35,6 @@ groups = master_df['subject_id']
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 
-# Hyperparam grid (~648 combos × 17 folds ≈ 1-1.5 hours)
 num_unique_states = len(np.unique(y_encoded))
 param_grid = {
     'n_estimators': [200, 250, 300],
