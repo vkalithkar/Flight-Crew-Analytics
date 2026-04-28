@@ -211,12 +211,6 @@ data/raw/**/*.zip
 data/clean/
 data/ecg_gsr_resp_preprocess/*.csv
 
-
-vandana/raw_filtered_eeg_plots
-vandana/cleaned_data
-vandana/ica_data
-vandana/epoched_data
-
 katy/clean/
 katy/clean2/
 katy/plots/
@@ -227,15 +221,8 @@ data/eeg_preprocess/ica_data
 data/eeg_preprocess/interpolated_data
 data/eeg_preprocess/
 
-log/feature_engineering/
 log/preprocessing_ecg_gsr_resp/
-log/preprocessing_eeg/*.err
-log/preprocessing_eeg/*.out
-log/hyperparams/
-
 log/pipeline/
+log/hyperparams
 
-
-output/*.csv
 data/feature_extracted/
-sandbox*/
