@@ -210,16 +210,10 @@ data/raw/**/*.csv
 data/raw/**/*.zip
 data/clean/
 data/ecg_gsr_resp_preprocess/*.csv
-
-katy/clean/
-katy/clean2/
-katy/plots/
-katy/*.csv
-
 data/eeg_preprocess/
-
-log/pipeline/
-
 data/feature_extracted/
+
+log/*.err
+log/*.out
 
 eda/plots/
