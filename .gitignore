@@ -211,6 +211,7 @@ data/raw/**/*.zip
 data/clean/
 data/ecg_gsr_resp_preprocess/*.csv
 data/eeg_preprocess/
+data/eeg_preprocess/pyprep_results.json
 data/feature_extracted/
 
 eda/plots/
