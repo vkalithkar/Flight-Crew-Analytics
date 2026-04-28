@@ -216,12 +216,9 @@ katy/clean2/
 katy/plots/
 katy/*.csv
 
-data/eeg_preprocess/epoched_data
-data/eeg_preprocess/ica_data
-data/eeg_preprocess/interpolated_data
 data/eeg_preprocess/
 
-log/preprocessing_ecg_gsr_resp/
+
 log/pipeline/
 log/hyperparams
 
