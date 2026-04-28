@@ -7,7 +7,7 @@ import neurokit2 as nk
 from scipy.stats import skew, kurtosis
 import mne
 
-FS = 256  
+FS = 256
 
 WINDOW_SEC = 30
 STEP_RATIO = 0.2
@@ -127,8 +127,8 @@ def create_feature_table(df, eeg_epochs):
     X, y = [], []
 
     eeg_data = eeg_epochs.get_data()
-    #CHANGED THIS!!!
-    ch_names = eeg_epochs.ch_names  
+
+    ch_names = eeg_epochs.ch_names
 
     n_windows = (len(df) - WINDOW_SIZE) // STEP_SIZE
 
@@ -169,6 +169,8 @@ def create_feature_table(df, eeg_epochs):
 
 def main():
     OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+    ##ADDED LINE
+    EXCLUDE_SUBJECTS = {"10", "21"}
 
     for file in INPUT_DIR.glob("*_clean.csv"):
         print(f"Processing {file.name}")
@@ -176,7 +178,12 @@ def main():
         df = pd.read_csv(file)
 
         subject_id = file.stem.split("_")[0]
-        file_type = df["file_type"].iloc[0] 
+        ##ADDED LINE
+        if subject_id in EXCLUDE_SUBJECTS:
+            print(f"Skipping subject {subject_id}")
+            continue
+
+        file_type = df["file_type"].iloc[0]
 
         eeg_file = EEG_DIR / subject_id / file.name.replace("_clean.csv", "_epo.fif")
 
@@ -190,7 +197,7 @@ def main():
 
         X["label"] = y
 
-        #CHANGED THIS!!!
+
         subject_dir = OUTPUT_DIR / subject_id
         subject_dir.mkdir(exist_ok=True, parents=True)
 
