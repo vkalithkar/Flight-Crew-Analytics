@@ -231,7 +231,9 @@ log/feature_engineering/
 log/preprocessing_ecg_gsr_resp/
 log/preprocessing_eeg/*.err
 log/preprocessing_eeg/*.out
-log/hyperparams
+log/hyperparams/
+
+log/pipeline/
 
 
 output/*.csv
