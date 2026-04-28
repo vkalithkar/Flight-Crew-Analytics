@@ -16,23 +16,22 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate flight2
 
 # Downloads the data
-./scripts/01_download_data.sh
-
-# Makes a combined version of all the data if needed for further analysis
-# python ./02_combined_data.py
+./scripts/00_download_data.sh
 
 # Preprocessing all of the data besides EEG
-python ./scripts/ecg_gsr_resp/00_preprocess.py
+python ./scripts/01_ecg_gsr_resp/00_preprocess.py
 
 # These scripts are for preprocessing EEG
-python ./scripts/eeg/00_get_bad_channels.py
-python ./scripts/eeg/01_interpolate_filter_reref.py
-python ./scripts/eeg/02_ica.py
-python ./scripts/eeg/03_epoching.py
+python ./scripts/02_eeg/00_get_bad_channels.py
+python ./scripts/02_eeg/01_interpolate_filter_reref.py
+python ./scripts/02_eeg/02_ica.py
+python ./scripts/02_eeg/03_epoching.py
+
+# EDA Plot Generation Script
+python ./scripts/03_eda_plots.py
 
 # Feature engineering script to prepare data for xgboost
-
-python ./scripts/03_feature_engineering.py
+python ./scripts/04_feature_engineering.py
 
 # XGBoost model
-python ./scripts/04_model_creation.py
+python ./scripts/05_model_creation.py

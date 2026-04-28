@@ -16,10 +16,10 @@ state_colors = {
 for pilot_id in pilots:
     for file_type in file_types:
         FILE_NAME = f'{pilot_id}_{file_type}_clean'  # was int + str, now f-string
-        out_dir = f'katy/plots/{pilot_id}'
+        out_dir = f'./eda_plots/{pilot_id}'
         os.makedirs(out_dir, exist_ok=True)  # create per-pilot dir if needed
 
-        df = pd.read_csv(f'katy/clean2/{FILE_NAME}.csv')
+        df = pd.read_csv(f'./data/ecg_gsr_resp_preprocess/{FILE_NAME}.csv')
         print(f'{FILE_NAME} shape:')
         print(df.shape)
         print('---xxx---')
