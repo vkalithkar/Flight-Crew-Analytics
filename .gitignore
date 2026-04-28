@@ -218,7 +218,8 @@ katy/*.csv
 
 data/eeg_preprocess/
 
-
 log/pipeline/
 
 data/feature_extracted/
+
+eda/plots/
