@@ -213,7 +213,4 @@ data/ecg_gsr_resp_preprocess/*.csv
 data/eeg_preprocess/
 data/feature_extracted/
 
-log/*.err
-log/*.out
-
 eda/plots/
