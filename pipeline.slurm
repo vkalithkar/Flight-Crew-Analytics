@@ -15,24 +15,24 @@ module load miniforge3
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate flight2
 
-# Downloads the data
-./scripts/01_download_data.sh
+# # Downloads the data
+# ./scripts/01_download_data.sh
 
-# Makes a combined version of all the data if needed for further analysis
-# python ./02_combined_data.py
+# # Makes a combined version of all the data if needed for further analysis
+# # python ./02_combined_data.py
 
-# Preprocessing all of the data besides EEG
-python ./scripts/ecg_gsr_resp/00_preprocess.py
+# # Preprocessing all of the data besides EEG
+# python ./scripts/ecg_gsr_resp/00_preprocess.py
 
-# These scripts are for preprocessing EEG
-python ./scripts/eeg/00_get_bad_channels.py
-python ./scripts/eeg/01_interpolate_filter_reref.py
-python ./scripts/eeg/02_ica.py
-python ./scripts/eeg/03_epoching.py
+# # These scripts are for preprocessing EEG
+# python ./scripts/eeg/00_get_bad_channels.py
+# python ./scripts/eeg/01_interpolate_filter_reref.py
+# python ./scripts/eeg/02_ica.py
+# python ./scripts/eeg/03_epoching.py
 
-# Feature engineering script to prepare data for xgboost
+# # Feature engineering script to prepare data for xgboost
 
-python ./scripts/03_feature_engineering.py
+# python ./scripts/03_feature_engineering.py
 
 # XGBoost model
 python ./scripts/04_model_creation.py

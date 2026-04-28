@@ -55,8 +55,7 @@ print(f"Total fits: {total_combos * len(np.unique(groups))}", flush=True)
 bst = XGBClassifier(
     objective='multi:softmax',
     num_class=num_unique_states,
-    eval_metric='mlogloss',
-    use_label_encoder=False
+    eval_metric='mlogloss'
 )
 
 # Setup LOGO-CV
@@ -71,13 +70,6 @@ search = GridSearchCV(
 )
 search.fit(X, y_encoded, groups=groups)
 
-# Save results
-results_df = pd.DataFrame(search.cv_results_)
-results_df = results_df.sort_values('mean_test_score', ascending=False)
-
-cols = ['mean_test_score', 'std_test_score', 'mean_train_score'] + \
-       [c for c in results_df.columns if c.startswith('param_')]
-results_df[cols].to_csv("./log/hyperparams/hyperparam_search_results.csv", index=False)
 print('--- Grid Search Completed! ---', flush=True)
 
 print(f"\nBest Params: {search.best_params_}", flush=True)
@@ -85,5 +77,6 @@ print(f"Best CV Weighted F1: {search.best_score_:.4f}", flush=True)
 print("All done!", flush=True)
 
 best_model = search.best_estimator_
+os.makedirs("./model", exist_ok=True)
 joblib.dump(best_model, "./model/best_xgb_model.pkl")
 print("Best model saved!", flush=True)
