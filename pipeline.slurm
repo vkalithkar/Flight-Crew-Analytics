@@ -35,3 +35,7 @@ python ./scripts/04_feature_engineering.py
 
 # XGBoost model
 python ./scripts/05_model_creation.py
+
+# cleaning up data directory
+rm -rf data/ecg_gsr_resp_preprocess/
+rm -rf data/eeg_preprocess/
