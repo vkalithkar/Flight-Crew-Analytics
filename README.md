@@ -10,7 +10,7 @@ Names:
 
 # Flight Crew Physiological Data for Crew State Monitoring
 
-This project explores physiological data collected fromm pilot/copilot pairs across multiple experimental conditions, including startle/surprise, channelized attention, and a full flight simulator. EEG signature, ECG, Respiration, and GSR (galvanic skin response) were all measured. This data is sourced from the NASA Open Data Portal.
+This project explores physiological data collected from pilot/copilot pairs across multiple experimental conditions, including startle/surprise, channelized attention, and a full flight simulator. EEG signature, ECG, Respiration, and GSR (galvanic skin response) were all measured. This data is sourced from the NASA Open Data Portal.
 
 ### Experimental Conditions
 
@@ -28,7 +28,7 @@ This project explores physiological data collected fromm pilot/copilot pairs acr
 
 4. **Startle/Surprise (SS)**
     - Sudden, unexpected events introduced during a task
-    - Designed to mimic what could happen during flight when something does go according to plan
+    - Designed to mimic what could happen during flight when something does not go according to plan
 
 ## Research Questions
 
