@@ -211,8 +211,7 @@ data/ecg_gsr_resp_preprocess/
 data/eeg_preprocess/
 data/feature_extracted/
 
-log/*.err
-log/*.out
+log
 
 eda_plots/
 model/
