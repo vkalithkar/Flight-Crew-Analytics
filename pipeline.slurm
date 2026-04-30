@@ -34,8 +34,9 @@ python ./scripts/03_eda_plots.py
 python ./scripts/04_feature_engineering.py
 
 # XGBoost model
-python ./scripts/05_model_creation.py
+python ./scripts/05_model_creation_HPO.py
 
 # cleaning up data directory
 rm -rf data/ecg_gsr_resp_preprocess/
 rm -rf data/eeg_preprocess/
+rm -rf data/feature_extracted/
