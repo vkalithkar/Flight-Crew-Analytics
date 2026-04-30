@@ -208,7 +208,6 @@ __marimo__/
 
 data/raw/**/*.csv
 data/raw/**/*.zip
-data/clean/
 data/ecg_gsr_resp_preprocess/
 data/eeg_preprocess/
 data/feature_extracted/
