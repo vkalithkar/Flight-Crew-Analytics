@@ -23,29 +23,29 @@ This pipeline downloads physiological data from the NASA website, cleans and pre
 ## Pipeline Structure
 
 00_download_data.sh
-|
-v
-01_ecg_gsr_resp/00_preprocess.py
-|
-v
-02_eeg/00_get_bad_channels.py
-02_eeg/01_interpolate_filter_reref.py
-02_eeg/02_ica.py
-02_eeg/03_epoching.py
-|
-v
-03_eda_plots.py
-|
-v
-04_feature_engineering.py
-|
-v
-05_model_creation_HPO.py
-|
-v
-model/best_xgb_model.pkl
-model/model_stats.txt
 
+01_ecg_gsr_resp/00_preprocess.py
+
+
+02_eeg/00_get_bad_channels.py
+
+
+02_eeg/01_interpolate_filter_reref.py
+
+
+02_eeg/02_ica.py
+
+
+02_eeg/03_epoching.py
+
+
+03_eda_plots.py
+
+
+04_feature_engineering.py
+
+
+05_model_creation_HPO.py
 ---
 
 ## Quickstart
